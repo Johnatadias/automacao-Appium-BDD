@@ -45,13 +45,12 @@ public class FormCadastraoUsuarioPage extends BasePage{
 		MobileElement campoLastName = driver.findElementByXPath(".//android.widget.LinearLayout[2]/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.RelativeLayout[2]/android.widget.EditText");
 		campoLastName.click();
 		campoLastName.sendKeys(lastName);
+		bntNextLine(touchAction);
 	}
 	
 	public void inseriFirstName(String firstName) {
 		MobileElement campoFirstName = driver.findElementByXPath(".//android.widget.LinearLayout[2]/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.RelativeLayout[1]/android.widget.EditText");
-		campoFirstName.click();
 		campoFirstName.sendKeys(firstName);
-		bntNextLine(touchAction);
 	}
 	
 	public void inseriPhoneNumber(String phoneNumber) {
@@ -79,18 +78,19 @@ public class FormCadastraoUsuarioPage extends BasePage{
 		campoAddress.sendKeys(address);
 		bntNextLine(touchAction);
 	}
+
+	public void inseriZipCode(String zipCode) {
+		MobileElement campoZip = driver.findElementByXPath(".//android.widget.LinearLayout/android.widget.ScrollView/android.widget.LinearLayout/android.widget.LinearLayout[2]/android.widget.LinearLayout/android.widget.LinearLayout[2]/android.widget.RelativeLayout[2]/android.widget.EditText");
+		campoZip.sendKeys(zipCode);
+	}
 	
 	public void inseriCity(String city) {
 		MobileElement campoCity = driver.findElementByXPath(".//android.widget.LinearLayout/android.widget.ScrollView/android.widget.LinearLayout/android.widget.LinearLayout[2]/android.widget.LinearLayout/android.widget.LinearLayout[2]/android.widget.RelativeLayout[1]/android.widget.EditText");
+		campoCity.click();
 		campoCity.sendKeys(city);
-	}
-	
-	public void inseriZipCode(String zipCode) {
-		MobileElement campoZip = driver.findElementByXPath(".//android.widget.LinearLayout/android.widget.ScrollView/android.widget.LinearLayout/android.widget.LinearLayout[2]/android.widget.LinearLayout/android.widget.LinearLayout[2]/android.widget.RelativeLayout[2]/android.widget.EditText");
-		campoZip.click();
-		campoZip.sendKeys(zipCode);
 		hideKeyboard();
 	}
+
 	
 	public void checkBoxReceberPromocoes() {
 		driver.findElementById("com.Advantage.aShopping:id/checkBoxRecieveOffers").click();
@@ -109,14 +109,14 @@ public class FormCadastraoUsuarioPage extends BasePage{
 		inseriEmail(email);
 		inseriPassword(password);
 		inseriConfirPassword(confirmPassword);
-		inseriLastName(lastName);
 		inseriFirstName(firstName);
+		inseriLastName(lastName);
 		inseriPhoneNumber(phoneNumber);
 		inseriCountry(country);
 		inseriStates(states);
 		inseriAddress(address);
-		inseriCity(city);
 		inseriZipCode(zipCode);
+		inseriCity(city);
 		checkBoxReceberPromocoes();
 		
 		btnRegistrar();
@@ -145,7 +145,6 @@ public class FormCadastraoUsuarioPage extends BasePage{
 	public String getNomeUsuarioRandom(int qtdLetra) {
 		Random random = new Random();
 		int index;
-
 		String caracteres = "ABCDEFGHIJKLMNOPQRSTUVYWXZabcdefghijklmnopqrstuvxwyz0123456789";
 		String palavraRandom = "";
 

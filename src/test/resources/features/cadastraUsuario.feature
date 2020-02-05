@@ -4,47 +4,20 @@
 Funcionalidade: Validar cadastro
 
 	Como um usuario do sistema
-	Eu quero me cadastrar no site da loja
+	Eu quero me cadastrar no app da loja
 	Para que eu possa realizar compras
 
 Contexto:
-	  Dado que o usuário esteja na aplicação
-  	Quando clicar em no icone user
-  	E clicar em create new account
-
+	  Dado que o usuário esteja na pagina cadastro de usuário
+  	
 @test1
   Cenário: Deve cadastrar um novo usuario com sucesso
- 	  E preencher o campo username "johnm"
-  	E preencher o campo email "a@a.com"
-  	E preencher o campo password "Oicara10"
-  	E preencher o campo confirm password "Oicara10"
-  	E preencher o campo firt name "johnata"
-  	E preencher o campo last name "dias"
-  	E preencher o campo phone number "1234-1234"
-  	E selecionar o pais "Brazil" no campo country
-  	E preencher o campo city "São paulo"
-  	E preencher o campo address "Rua xy, 182"
-  	E preencher o campo state "SP"
-  	E preencher o campo postal code "02309-030"
-  	E aceitar os termos de uso
-  	E clicar no botão register
- 		Então usuario é cadastrado com sucesso "johnm"
+ 		Quando realizar o cadastro com username "john718" válido
+ 		Então o usuario deve ser notificado que o usuario "john718" esta logado
    	
 @test2
-  Cenário: Não deve cadastrar usuario existente
-   	E preencher o campo username "john1411"
-  	E preencher o campo email "a@a.com"
-  	E preencher o campo password "Oicara10"
-  	E preencher o campo confirm password "Oicara10"
-  	E preencher o campo firt name "johnata"
-  	E preencher o campo last name "dias"
-  	E preencher o campo phone number "1234-1234"
-  	E selecionar o pais "Brazil" no campo country
-  	E preencher o campo city "São paulo"
-  	E preencher o campo address "Rua xy, 182"
-  	E preencher o campo state "SP"
-  	E preencher o campo postal code "02309-030"
-  	E aceitar os termos de uso
-  	E clicar no botão register
-  	Então usuario é notificado com uma informação "User name already exists"
+  Cenário: Deve validar campos obrigatorios
+  	Quando realizar o cadastro sem preencher os campos obrigatorios
+  	Então usuario é notificado com a mensagem 
+  	| User name required | Email required | Password required | Confirm password required |
   	

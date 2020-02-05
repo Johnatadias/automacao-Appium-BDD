@@ -8,7 +8,7 @@ import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-			features = "src/test/resources/features/",
+			features = "src/test/resources/features/cadastraUsuario.feature",
 			glue = "br.com.rsinet_appium_bdd.test",
 			monochrome = true,
 			snippets = SnippetType.CAMELCASE,
