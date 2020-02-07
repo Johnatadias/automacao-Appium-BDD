@@ -7,10 +7,14 @@ Funcionalidade: Adicionar produtos no carrinho
 	Eu quero encontrar um produto pela tela principal
 	Para que eu possa adicionar no carrinho de compras
 
-Cenario: Não deve adicionar mais de dez produto iguais no carrinho de compras
-	Dado que o usuario esteja na tela principal
-	Quando seleciona determinada categoria "speakers"
-	E seleciona o produto "HP Roar Plus Wireless Speaker"
-	E adiciona a quantidades de items para "99"
-	E clica em adicionar no carrinho
-	Então o usuario é notificado com uma informação "Oops! We only have 10 in stock. We updated your order accordingly"
+Esquema do Cenário: Não deve adicionar mais que dez produtos iguais no carrinho de compras
+	Dado que o usuario esteja logado na tela principal
+	Quando seleciona determinada categoria "<categoria>"
+	E seleciona o produto "<produto>"
+	E adiciona a quantidades de items para "<colocarQuantidade>"
+	E adiciono no carrinho de compras
+	Então deve existir "<quantidadeEsperada>" itens no carrinho
+	
+Exemplos:
+| categoria | produto 													|	 colocarQuantidade  |  quantidadeEsperada |
+| Laptops   | HP CHROMEBOOK 14 G1(ENERGY STAR)	|  99									|		10								|

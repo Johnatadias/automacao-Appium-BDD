@@ -12,8 +12,8 @@ Contexto:
   	
 @test1
   Cenário: Deve cadastrar um novo usuario com sucesso
- 		Quando realizar o cadastro com username "john718" válido
- 		Então o usuario deve ser notificado que o usuario "john718" esta logado
+ 		Quando realizar um cadastro válido
+ 		Então o usuario deve ser notificado que o usuario esta logado
    	
 @test2
   Cenário: Deve validar campos obrigatorios

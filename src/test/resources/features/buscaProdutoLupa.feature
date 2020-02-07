@@ -8,16 +8,15 @@ Funcionalidade: Filtrar produto desejado atraves da lupa de pesquisa
 	Para que eu possa obter mais informações sobre ele
 	
 Contexto:
-	Dado que o usuario esteja na tela home 
-	Quando clicar na lupa de pesquisa
+	Dado que o usuario esteja na tela home do sistema
 	
 	@tipo1
 	Cenário: Deve pesquisar um produto existente
-	E inserir a categoria "laptops"
-	E selecionar o produto desejado "HP Chromebook 14 G1(ES)"
-	Então o usuario deve visualizar as informações sobre o produto "HP Chromebook 14 G1(ES)"
+	Quando inserir a categoria "laptops" na lupa de pesquisa
+	E selecionar o produto desejado "HP PAVILION 15Z LAPTOP"
+	Então o usuario deve visualizar as informações sobre o produto "HP PAVILION 15Z LAPTOP"
 	
 	@tipo2
 	Cenário: Não deve encontrar um produto inexistente
-	E inserir a categoria "video game"
+	Quando inserir a categoria "video game" na lupa de pesquisa
 	Então o usuario deve ser notificado que o produto não existe "No results"
