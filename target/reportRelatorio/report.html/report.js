@@ -85,6 +85,10 @@ formatter.examples({
   ],
   "keyword": "Exemplos"
 });
+formatter.before({
+  "duration": 24341552900,
+  "status": "passed"
+});
 formatter.scenario({
   "line": 20,
   "name": "Não deve adicionar mais que dez produtos iguais no carrinho de compras",
@@ -145,7 +149,7 @@ formatter.match({
   "location": "AdicionaProdutoCarrinhoStep.queOUsuarioEstejaLogadoNaTelaPrincipal()"
 });
 formatter.result({
-  "duration": 41309787000,
+  "duration": 7081418600,
   "status": "passed"
 });
 formatter.match({
@@ -158,7 +162,7 @@ formatter.match({
   "location": "AdicionaProdutoCarrinhoStep.selecionaDeterminadaCategoria(String)"
 });
 formatter.result({
-  "duration": 1860595400,
+  "duration": 3936283600,
   "status": "passed"
 });
 formatter.match({
@@ -171,7 +175,7 @@ formatter.match({
   "location": "AdicionaProdutoCarrinhoStep.selecionaOProduto(String)"
 });
 formatter.result({
-  "duration": 5194637400,
+  "duration": 2751034700,
   "status": "passed"
 });
 formatter.match({
@@ -184,14 +188,14 @@ formatter.match({
   "location": "AdicionaProdutoCarrinhoStep.adicionaAQuantidadesDeItemsPara(String)"
 });
 formatter.result({
-  "duration": 3102053100,
+  "duration": 3015726700,
   "status": "passed"
 });
 formatter.match({
   "location": "AdicionaProdutoCarrinhoStep.adicionoNoCarrinhoDeCompras()"
 });
 formatter.result({
-  "duration": 760437300,
+  "duration": 635298500,
   "status": "passed"
 });
 formatter.match({
@@ -204,15 +208,15 @@ formatter.match({
   "location": "AdicionaProdutoCarrinhoStep.deveExistirItensNoCarrinho(String)"
 });
 formatter.result({
-  "duration": 1269738100,
+  "duration": 1290555100,
   "status": "passed"
 });
 formatter.after({
-  "duration": 1120832400,
+  "duration": 958230800,
   "status": "passed"
 });
 formatter.after({
-  "duration": 997581100,
+  "duration": 1273639800,
   "status": "passed"
 });
 formatter.uri("buscaProdutoHome.feature");
@@ -234,6 +238,10 @@ formatter.feature({
       "name": "@pesquisa_produto_tela_home"
     }
   ]
+});
+formatter.before({
+  "duration": 19697282300,
+  "status": "passed"
 });
 formatter.scenario({
   "line": 10,
@@ -267,7 +275,7 @@ formatter.match({
   "location": "BuscaProdutoHomeStep.queOUsuarioEstejaNaPaginaHome()"
 });
 formatter.result({
-  "duration": 26592561200,
+  "duration": 104700,
   "status": "passed"
 });
 formatter.match({
@@ -280,7 +288,7 @@ formatter.match({
   "location": "BuscaProdutoHomeStep.selecionaACategoria(String)"
 });
 formatter.result({
-  "duration": 2029540500,
+  "duration": 1135589600,
   "status": "passed"
 });
 formatter.match({
@@ -293,7 +301,7 @@ formatter.match({
   "location": "BuscaProdutoHomeStep.selecionaOProdutoDesejado(String)"
 });
 formatter.result({
-  "duration": 3813295300,
+  "duration": 3421177400,
   "status": "passed"
 });
 formatter.match({
@@ -306,16 +314,15 @@ formatter.match({
   "location": "BuscaProdutoHomeStep.oUsuarioDeveVisualizarAsInformaçõesDoProduto(String)"
 });
 formatter.result({
-  "duration": 15073562500,
-  "error_message": "org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027RSI1594\u0027, ip: \u002710.0.75.1\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_231\u0027\nDriver info: io.appium.java_client.android.AndroidDriver\nCapabilities {appActivity: com.Advantage.aShopping.Spl..., appPackage: com.Advantage.aShopping, databaseEnabled: false, desired: {appActivity: com.Advantage.aShopping.Spl..., appPackage: com.Advantage.aShopping, deviceName: 89d6f0da, platformName: android, resetKeyboard: true, udid: 0039960624, unicodeKeyboard: true}, deviceApiLevel: 27, deviceManufacturer: motorola, deviceModel: Moto G (5S) Plus, deviceName: 0039960624, deviceScreenDensity: 480, deviceScreenSize: 1080x1920, deviceUDID: 0039960624, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 3, platform: LINUX, platformName: Android, platformVersion: 8.1.0, resetKeyboard: true, statBarHeight: 72, takesScreenshot: true, udid: 0039960624, unicodeKeyboard: true, viewportRect: {height: 1848, left: 0, top: 72, width: 1080}, warnings: {}, webStorageEnabled: false}\nSession ID: fee16f68-5196-45e6-9366-126b0eed1f91\n*** Element info: {Using\u003did, value\u003dcom.Advantage.aShopping:id/textViewProductName}\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)\r\n\tat java.lang.reflect.Constructor.newInstance(Unknown Source)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)\r\n\tat io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)\r\n\tat io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:62)\r\n\tat io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)\r\n\tat io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)\r\n\tat io.appium.java_client.DefaultGenericMobileDriver.findElementById(DefaultGenericMobileDriver.java:70)\r\n\tat io.appium.java_client.AppiumDriver.findElementById(AppiumDriver.java:1)\r\n\tat io.appium.java_client.android.AndroidDriver.findElementById(AndroidDriver.java:1)\r\n\tat br.com.rsinet_appium_bdd.screens.DescricaoProdutoScreen.validandoProdutoEscolhido(DescricaoProdutoScreen.java:16)\r\n\tat br.com.rsinet_appium_bdd.steps.BuscaProdutoHomeStep.oUsuarioDeveVisualizarAsInformaçõesDoProduto(BuscaProdutoHomeStep.java:42)\r\n\tat ✽.Então o usuario deve visualizar as informações do produto \"HP ELITEPAD 1000 G2 TABLET\"(buscaProdutoHome.feature:14)\r\n",
-  "status": "failed"
-});
-formatter.after({
-  "duration": 2378730300,
+  "duration": 731046500,
   "status": "passed"
 });
 formatter.after({
-  "duration": 902032800,
+  "duration": 1152511200,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 866252900,
   "status": "passed"
 });
 formatter.uri("buscaProdutoLupa.feature");
@@ -338,6 +345,10 @@ formatter.feature({
     }
   ]
 });
+formatter.before({
+  "duration": 19699904300,
+  "status": "passed"
+});
 formatter.background({
   "line": 10,
   "name": "",
@@ -354,7 +365,7 @@ formatter.match({
   "location": "BuscaProdutoLupaStep.queOUsuarioEstejaNaTelaHomeDoSistema()"
 });
 formatter.result({
-  "duration": 27706838500,
+  "duration": 92100,
   "status": "passed"
 });
 formatter.scenario({
@@ -396,7 +407,7 @@ formatter.match({
   "location": "BuscaProdutoLupaStep.inserirACategoriaNaLupaDePesquisa(String)"
 });
 formatter.result({
-  "duration": 2739913300,
+  "duration": 2349986000,
   "status": "passed"
 });
 formatter.match({
@@ -409,7 +420,7 @@ formatter.match({
   "location": "BuscaProdutoLupaStep.selecionarOProdutoDesejado(String)"
 });
 formatter.result({
-  "duration": 6680746400,
+  "duration": 2870577600,
   "status": "passed"
 });
 formatter.match({
@@ -422,15 +433,19 @@ formatter.match({
   "location": "BuscaProdutoLupaStep.oUsuarioDeveVisualizarAsInformaçõesSobreOProduto(String)"
 });
 formatter.result({
-  "duration": 82470500,
+  "duration": 207657400,
   "status": "passed"
 });
 formatter.after({
-  "duration": 1010662000,
+  "duration": 867322200,
   "status": "passed"
 });
 formatter.after({
-  "duration": 957033500,
+  "duration": 1134530500,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 19811108200,
   "status": "passed"
 });
 formatter.background({
@@ -449,7 +464,7 @@ formatter.match({
   "location": "BuscaProdutoLupaStep.queOUsuarioEstejaNaTelaHomeDoSistema()"
 });
 formatter.result({
-  "duration": 26775908300,
+  "duration": 34100,
   "status": "passed"
 });
 formatter.scenario({
@@ -486,7 +501,7 @@ formatter.match({
   "location": "BuscaProdutoLupaStep.inserirACategoriaNaLupaDePesquisa(String)"
 });
 formatter.result({
-  "duration": 2570153500,
+  "duration": 2577647300,
   "status": "passed"
 });
 formatter.match({
@@ -499,15 +514,15 @@ formatter.match({
   "location": "BuscaProdutoLupaStep.oUsuarioDeveSerNotificadoQueOProdutoNãoExiste(String)"
 });
 formatter.result({
-  "duration": 2040285600,
+  "duration": 1131277200,
   "status": "passed"
 });
 formatter.after({
-  "duration": 842391800,
+  "duration": 599605300,
   "status": "passed"
 });
 formatter.after({
-  "duration": 981631000,
+  "duration": 953604900,
   "status": "passed"
 });
 formatter.uri("cadastraUsuario.feature");
@@ -530,6 +545,10 @@ formatter.feature({
     }
   ]
 });
+formatter.before({
+  "duration": 21109972800,
+  "status": "passed"
+});
 formatter.background({
   "line": 10,
   "name": "",
@@ -546,7 +565,7 @@ formatter.match({
   "location": "CadastraUsuarioStep.que_o_usuário_esteja_na_pagina_cadastro_de_usuário()"
 });
 formatter.result({
-  "duration": 33744195800,
+  "duration": 3152567500,
   "status": "passed"
 });
 formatter.scenario({
@@ -577,23 +596,27 @@ formatter.match({
   "location": "CadastraUsuarioStep.realizarUmCadastroVálido()"
 });
 formatter.result({
-  "duration": 31433508800,
+  "duration": 29617873500,
   "status": "passed"
 });
 formatter.match({
   "location": "CadastraUsuarioStep.oUsuarioDeveSerNotificadoQueOUsuarioEstaLogado()"
 });
 formatter.result({
-  "duration": 775496700,
-  "error_message": "org.openqa.selenium.StaleElementReferenceException: The element \u0027By.id: com.Advantage.aShopping:id/imageViewMenu\u0027 does not exist in DOM anymore\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027RSI1594\u0027, ip: \u002710.0.75.1\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_231\u0027\nDriver info: io.appium.java_client.android.AndroidDriver\nCapabilities {appActivity: com.Advantage.aShopping.Spl..., appPackage: com.Advantage.aShopping, databaseEnabled: false, desired: {appActivity: com.Advantage.aShopping.Spl..., appPackage: com.Advantage.aShopping, deviceName: 89d6f0da, platformName: android, resetKeyboard: true, udid: 0039960624, unicodeKeyboard: true}, deviceApiLevel: 27, deviceManufacturer: motorola, deviceModel: Moto G (5S) Plus, deviceName: 0039960624, deviceScreenDensity: 480, deviceScreenSize: 1080x1920, deviceUDID: 0039960624, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 3, platform: LINUX, platformName: Android, platformVersion: 8.1.0, resetKeyboard: true, statBarHeight: 72, takesScreenshot: true, udid: 0039960624, unicodeKeyboard: true, viewportRect: {height: 1848, left: 0, top: 72, width: 1080}, warnings: {}, webStorageEnabled: false}\nSession ID: a7cebba8-ec98-4c1d-a2fa-b45141fda6b6\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)\r\n\tat java.lang.reflect.Constructor.newInstance(Unknown Source)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)\r\n\tat io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)\r\n\tat io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)\r\n\tat io.appium.java_client.DefaultGenericMobileElement.execute(DefaultGenericMobileElement.java:45)\r\n\tat io.appium.java_client.MobileElement.execute(MobileElement.java:1)\r\n\tat io.appium.java_client.android.AndroidElement.execute(AndroidElement.java:1)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)\r\n\tat br.com.rsinet_appium_bdd.screens.HomeScreen.clicarMenuNaHomePage(HomeScreen.java:13)\r\n\tat br.com.rsinet_appium_bdd.screens.HomeScreen.assertNovoUsuario(HomeScreen.java:25)\r\n\tat br.com.rsinet_appium_bdd.steps.CadastraUsuarioStep.oUsuarioDeveSerNotificadoQueOUsuarioEstaLogado(CadastraUsuarioStep.java:55)\r\n\tat ✽.Então o usuario deve ser notificado que o usuario esta logado(cadastraUsuario.feature:16)\r\n",
+  "duration": 822918900,
+  "error_message": "org.openqa.selenium.StaleElementReferenceException: androidx.test.uiautomator.StaleObjectException\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027DESKTOP-U784KFP\u0027, ip: \u002710.0.0.104\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002711.0.1\u0027\nDriver info: io.appium.java_client.android.AndroidDriver\nCapabilities {appActivity: com.Advantage.aShopping.Spl..., appPackage: com.Advantage.aShopping, databaseEnabled: false, desired: {appActivity: com.Advantage.aShopping.Spl..., appPackage: com.Advantage.aShopping, deviceName: 89d6f0da, platformName: android, resetKeyboard: true, udid: 10.0.0.101:5555, unicodeKeyboard: true}, deviceApiLevel: 28, deviceManufacturer: Xiaomi, deviceModel: Mi 9 SE, deviceName: 10.0.0.101:5555, deviceScreenDensity: 480, deviceScreenSize: 1080x2340, deviceUDID: 10.0.0.101:5555, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 3, platform: LINUX, platformName: Android, platformVersion: 9, resetKeyboard: true, statBarHeight: 81, takesScreenshot: true, udid: 10.0.0.101:5555, unicodeKeyboard: true, viewportRect: {height: 2048, left: 0, top: 81, width: 1080}, warnings: {}, webStorageEnabled: false}\nSession ID: b0d41462-b0c3-400f-b396-e91e18adaeab\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)\r\n\tat io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)\r\n\tat io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)\r\n\tat io.appium.java_client.DefaultGenericMobileElement.execute(DefaultGenericMobileElement.java:45)\r\n\tat io.appium.java_client.MobileElement.execute(MobileElement.java:1)\r\n\tat io.appium.java_client.android.AndroidElement.execute(AndroidElement.java:1)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.isDisplayed(RemoteWebElement.java:326)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)\r\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)\r\n\tat br.com.rsinet_appium_bdd.screens.HomeScreen.clicarMenuNaHomePage(HomeScreen.java:16)\r\n\tat br.com.rsinet_appium_bdd.screens.HomeScreen.assertNovoUsuario(HomeScreen.java:25)\r\n\tat br.com.rsinet_appium_bdd.steps.CadastraUsuarioStep.oUsuarioDeveSerNotificadoQueOUsuarioEstaLogado(CadastraUsuarioStep.java:60)\r\n\tat ✽.Então o usuario deve ser notificado que o usuario esta logado(cadastraUsuario.feature:16)\r\n",
   "status": "failed"
 });
 formatter.after({
-  "duration": 998746100,
+  "duration": 680869700,
   "status": "passed"
 });
 formatter.after({
-  "duration": 971038000,
+  "duration": 1067954000,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 22983033200,
   "status": "passed"
 });
 formatter.background({
@@ -612,7 +635,7 @@ formatter.match({
   "location": "CadastraUsuarioStep.que_o_usuário_esteja_na_pagina_cadastro_de_usuário()"
 });
 formatter.result({
-  "duration": 32025487000,
+  "duration": 3760597700,
   "status": "passed"
 });
 formatter.scenario({
@@ -654,22 +677,22 @@ formatter.match({
   "location": "CadastraUsuarioStep.realizar_o_cadastro_sem_preencher_os_campos_obrigatorios()"
 });
 formatter.result({
-  "duration": 31195328000,
+  "duration": 29876929800,
   "status": "passed"
 });
 formatter.match({
   "location": "CadastraUsuarioStep.usuario_é_notificado_com_a_mensagem(DataTable)"
 });
 formatter.result({
-  "duration": 4646830900,
+  "duration": 2963365200,
   "status": "passed"
 });
 formatter.after({
-  "duration": 856915400,
+  "duration": 709638900,
   "status": "passed"
 });
 formatter.after({
-  "duration": 926965900,
+  "duration": 1215968600,
   "status": "passed"
 });
 });

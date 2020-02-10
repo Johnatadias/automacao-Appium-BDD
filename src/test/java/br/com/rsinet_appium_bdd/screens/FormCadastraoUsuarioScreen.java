@@ -3,6 +3,7 @@ import java.util.Random;
 
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.android.AndroidDriver;
+import org.openqa.selenium.support.CacheLookup;
 
 public class FormCadastraoUsuarioScreen extends BaseScreen{
 
@@ -85,14 +86,12 @@ public class FormCadastraoUsuarioScreen extends BaseScreen{
 	public void checkBoxReceberPromocoes() {
 		driver.findElementById("com.Advantage.aShopping:id/checkBoxRecieveOffers").click();
 	}
-	
-	public HomeScreen btnRegistrar() {
+
+	public void btnRegistrar() {
 		driver.findElementById("com.Advantage.aShopping:id/buttonRegister").click();
-		
-		return new HomeScreen(driver);
 	}
 	
-	public HomeScreen cadastroDeUsuario(String userName, String email, String password, String confirmPassword, String firstName,
+	public void cadastroDeUsuario(String userName, String email, String password, String confirmPassword, String firstName,
 			String lastName, String phoneNumber, String country, String states, String address, String city, String zipCode) {
 		
 		inseriUserName(userName);
@@ -110,8 +109,6 @@ public class FormCadastraoUsuarioScreen extends BaseScreen{
 		checkBoxReceberPromocoes();
 		
 		btnRegistrar();
-		
-		return new HomeScreen(driver);
 	}
 	
 	//////////////////////////////////////////////////////

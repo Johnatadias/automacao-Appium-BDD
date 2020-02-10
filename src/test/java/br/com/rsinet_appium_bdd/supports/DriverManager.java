@@ -25,7 +25,7 @@ public class DriverManager {
 
 		desiredCapabilities.setCapability("platformName", "Android");
 		desiredCapabilities.setCapability("deviceName", "89d6f0da");
-		desiredCapabilities.setCapability("udid", "0039960624"); 
+		desiredCapabilities.setCapability("udid", "10.0.0.101:5555");
 		//desiredCapabilities.setCapability("udid", "emulator-5554"); //Define qual dispositivo vai executar
 		// desiredCapabilities.setCapability(MobileCapabilityType.APP, C:\\temp\\Selenium_Automacao\\ProjectTreinamentoHub_Appium_BDD\\src\\test\\resources\\Advantage+demo+2_2.apk");
 		desiredCapabilities.setCapability("appPackage", "com.Advantage.aShopping");

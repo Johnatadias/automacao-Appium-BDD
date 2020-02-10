@@ -8,6 +8,7 @@ import java.util.List;
 import br.com.rsinet_appium_bdd.screens.BaseScreen;
 import br.com.rsinet_appium_bdd.screens.FormCadastraoUsuarioScreen;
 import br.com.rsinet_appium_bdd.screens.HomeScreen;
+import br.com.rsinet_appium_bdd.screens.LoginScreen;
 import br.com.rsinet_appium_bdd.supports.DriverManager;
 import cucumber.api.DataTable;
 import cucumber.api.java.pt.Dado;
@@ -20,59 +21,63 @@ import io.appium.java_client.android.AndroidDriver;
 public class CadastraUsuarioStep {
 
 	private AndroidDriver<MobileElement> driver;
-	private HomeScreen homePage;
-	private FormCadastraoUsuarioScreen formCadastroPage;
+	private HomeScreen homeScreen;
+	private FormCadastraoUsuarioScreen formCadastroScreen;
+	private LoginScreen loginScreen;
 	
 	@Dado("^que o usuário esteja na pagina cadastro de usuário$")
 	public void que_o_usuário_esteja_na_pagina_cadastro_de_usuário() {
-		driver = DriverManager.createDriver();
-		homePage = new HomeScreen(driver);
-		formCadastroPage = new FormCadastraoUsuarioScreen(driver);
-		homePage.clicarMenuNaHomePage().clicarIconeLoginDoMenu().clicarNovaConta();
+		driver = DriverManager.getDriver();
+		homeScreen = new HomeScreen(driver);
+		formCadastroScreen = new FormCadastraoUsuarioScreen(driver);
+		loginScreen = new LoginScreen(driver);
+		homeScreen.clicarMenuNaHomePage();
+        homeScreen.clicarIconeLoginDoMenu();
+        loginScreen.clicarNovaConta();
 	}
 	
 	@Quando("^realizar um cadastro válido$")
 	public void realizarUmCadastroVálido() {
-		formCadastroPage.inseriUserName(formCadastroPage.getNomeUsuarioRandom(6));
-		formCadastroPage.inseriEmail("a@a.com");
-		formCadastroPage.inseriPassword("John20");
-		formCadastroPage.inseriConfirPassword("John20");
-		formCadastroPage.inseriFirstName("Johnata");
-		formCadastroPage.inseriLastName("Dias");
-		formCadastroPage.inseriPhoneNumber("1234-1234");
-		formCadastroPage.inseriCountry("Brazil");
-		formCadastroPage.inseriStates("SP");
-		formCadastroPage.inseriAddress("Rua xyz, 198");
-		formCadastroPage.inseriCity("São Paulo");
-		formCadastroPage.inseriZipCode("12345-123");
-		formCadastroPage.checkBoxReceberPromocoes();
+		formCadastroScreen.inseriUserName(formCadastroScreen.getNomeUsuarioRandom(6));
+		formCadastroScreen.inseriEmail("a@a.com");
+		formCadastroScreen.inseriPassword("John20");
+		formCadastroScreen.inseriConfirPassword("John20");
+		formCadastroScreen.inseriFirstName("Johnata");
+		formCadastroScreen.inseriLastName("Dias");
+		formCadastroScreen.inseriPhoneNumber("1234-1234");
+		formCadastroScreen.inseriCountry("Brazil");
+		formCadastroScreen.inseriStates("SP");
+		formCadastroScreen.inseriAddress("Rua xyz, 198");
+		formCadastroScreen.inseriCity("São Paulo");
+		formCadastroScreen.inseriZipCode("12345-123");
+		formCadastroScreen.checkBoxReceberPromocoes();
 		
-		formCadastroPage.btnRegistrar();
+		formCadastroScreen.btnRegistrar();
 	}
 
 	@Então("^o usuario deve ser notificado que o usuario esta logado$")
 	public void oUsuarioDeveSerNotificadoQueOUsuarioEstaLogado() throws Throwable {
-		String usuarioAtual = homePage.assertNovoUsuario();
+		String usuarioAtual = homeScreen.assertNovoUsuario();
 		assertNotEquals("LOGIN", usuarioAtual);
 	}
 
 	@Quando("^realizar o cadastro sem preencher os campos obrigatorios$")
 	public void realizar_o_cadastro_sem_preencher_os_campos_obrigatorios() {
-		formCadastroPage.inseriUserName("");
-		formCadastroPage.inseriEmail("");
-		formCadastroPage.inseriPassword("");
-		formCadastroPage.inseriConfirPassword("");
-		formCadastroPage.inseriFirstName("Johnata");
-		formCadastroPage.inseriLastName("Dias");
-		formCadastroPage.inseriPhoneNumber("1234-1234");
-		formCadastroPage.inseriCountry("Brazil");
-		formCadastroPage.inseriStates("SP");
-		formCadastroPage.inseriAddress("Rua xyz, 198");
-		formCadastroPage.inseriZipCode("12345-123");
-		formCadastroPage.inseriCity("São Paulo");
-		formCadastroPage.checkBoxReceberPromocoes();
+		formCadastroScreen.inseriUserName("");
+		formCadastroScreen.inseriEmail("");
+		formCadastroScreen.inseriPassword("");
+		formCadastroScreen.inseriConfirPassword("");
+		formCadastroScreen.inseriFirstName("Johnata");
+		formCadastroScreen.inseriLastName("Dias");
+		formCadastroScreen.inseriPhoneNumber("1234-1234");
+		formCadastroScreen.inseriCountry("Brazil");
+		formCadastroScreen.inseriStates("SP");
+		formCadastroScreen.inseriAddress("Rua xyz, 198");
+		formCadastroScreen.inseriZipCode("12345-123");
+		formCadastroScreen.inseriCity("São Paulo");
+		formCadastroScreen.checkBoxReceberPromocoes();
 		
-		formCadastroPage.btnRegistrar();
+		formCadastroScreen.btnRegistrar();
 	}
 
 	@Então("^usuario é notificado com a mensagem$")
@@ -80,9 +85,9 @@ public class CadastraUsuarioStep {
 		List<List<String>> date = mensagens.raw();
 		
 		new BaseScreen(driver, new TouchAction(driver)).scrollAndStop(date.get(0).get(0));
-		assertEquals(date.get(0).get(0), formCadastroPage.campoUserNameRequired());
-		assertEquals(date.get(0).get(1), formCadastroPage.campoEmailRequired());
-		assertEquals(date.get(0).get(2), formCadastroPage.campoPasswordRequired());
-		assertEquals(date.get(0).get(3), formCadastroPage.campoConfirmPasswordRequired());
+		assertEquals(date.get(0).get(0), formCadastroScreen.campoUserNameRequired());
+		assertEquals(date.get(0).get(1), formCadastroScreen.campoEmailRequired());
+		assertEquals(date.get(0).get(2), formCadastroScreen.campoPasswordRequired());
+		assertEquals(date.get(0).get(3), formCadastroScreen.campoConfirmPasswordRequired());
 	}
 }

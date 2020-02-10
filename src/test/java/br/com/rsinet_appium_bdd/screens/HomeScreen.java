@@ -2,6 +2,8 @@ package br.com.rsinet_appium_bdd.screens;
 
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.android.AndroidDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class HomeScreen extends BaseScreen{
 
@@ -9,16 +11,14 @@ public class HomeScreen extends BaseScreen{
 		super(driver);
 	}
 
-	public HomeScreen clicarMenuNaHomePage() {
-		driver.findElementById("com.Advantage.aShopping:id/imageViewMenu").click();
-	
-		return this;
+	public void clicarMenuNaHomePage() {
+		WebDriverWait wait = new WebDriverWait(driver, 100);
+		wait.until(ExpectedConditions.visibilityOf(driver.findElementById("com.Advantage.aShopping:id/imageViewMenu"))).click();
+		//driver.findElementById("com.Advantage.aShopping:id/imageViewMenu").click();
 	}
 	
-	public LoginScreen clicarIconeLoginDoMenu() {
+	public void clicarIconeLoginDoMenu() {
 		driver.findElementById("com.Advantage.aShopping:id/textViewMenuUser").click();
-		
-		return new LoginScreen(driver);
 	}
 	
 	public String assertNovoUsuario() {
@@ -28,16 +28,12 @@ public class HomeScreen extends BaseScreen{
 	
 	///////////////////////////////////////////////////////////////////
 	
-	public ResultadoFiltradoScreen escolheCategoriaHome(String categoria) {
+	public void escolheCategoriaHome(String categoria) {
 		driver.findElementByXPath("//android.widget.TextView[starts-with(@text, '"+categoria+"')]").click();
-		
-		return new ResultadoFiltradoScreen(driver);
 	}
 	
-	public ResultadoFiltradoScreen buscaLupa(String buscaProduto) {
+	public void buscaLupa(String buscaProduto) {
 		driver.findElementById("com.Advantage.aShopping:id/editTextSearch").sendKeys(buscaProduto);
 		driver.findElementById("com.Advantage.aShopping:id/imageViewSearch").click();
-		
-		return new ResultadoFiltradoScreen(driver);
 	}
 }
