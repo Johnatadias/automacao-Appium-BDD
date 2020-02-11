@@ -18,15 +18,19 @@ public class DescricaoProdutoScreen extends BaseScreen{
 	
 	///////////////////////////////////////////////////////
 	
-	public void selecionarQtdDeProdutos(String qtd) throws InterruptedException {
+	public DescricaoProdutoScreen selecionarQtdDeProdutos(String qtd) throws InterruptedException {
 		new WebDriverWait(driver, 50).until(ExpectedConditions.visibilityOf(driver.findElementById("com.Advantage.aShopping:id/textViewProductQuantity"))).click();
 		driver.findElementById("com.Advantage.aShopping:id/textViewProductQuantity").clear();
 		driver.findElementById("com.Advantage.aShopping:id/textViewProductQuantity").sendKeys(qtd);
 		driver.findElementById("com.Advantage.aShopping:id/textViewApply").click();
+		
+		return this;
 	}
 	
-	public void btnAdicionarProdutoNoCarrinho() {
+	public LoginScreen btnAdicionarProdutoNoCarrinho() {
 		driver.findElementById("com.Advantage.aShopping:id/buttonProductAddToCart").click();
+		
+		return new LoginScreen(driver);
 	}
 	
 	public boolean assertQtdCarrinho(String valorEsperado) {

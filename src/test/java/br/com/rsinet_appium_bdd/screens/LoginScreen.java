@@ -9,11 +9,12 @@ public class LoginScreen extends BaseScreen{
 		super(driver);
 	}
 
-	public void clicarNovaConta() {
+	public FormCadastraoUsuarioScreen clicarNovaConta() {
 		driver.findElementById("com.Advantage.aShopping:id/textViewDontHaveAnAccount").click();
+		return new FormCadastraoUsuarioScreen(driver);
 	}
 	
-	public void realizaLoginValido() throws InterruptedException {
+	public HomeScreen realizaLoginValido() throws InterruptedException {
 		driver.findElementByXPath(".//android.widget.RelativeLayout[3]/android.widget.EditText").sendKeys("johnatas");
 		MobileElement pass = driver.findElementByXPath(".//android.widget.RelativeLayout[4]/android.widget.EditText");
 		pass.click();
@@ -21,5 +22,7 @@ public class LoginScreen extends BaseScreen{
 		driver.findElementById("com.Advantage.aShopping:id/buttonLogin").click();
 		Thread.sleep(2000);
 		driver.findElementById("android:id/button2").click();
+		
+		return new HomeScreen(driver);
 	}
 }

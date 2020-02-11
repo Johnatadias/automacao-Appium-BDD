@@ -9,7 +9,7 @@ import br.com.rsinet_appium_bdd.screens.BaseScreen;
 import br.com.rsinet_appium_bdd.screens.FormCadastraoUsuarioScreen;
 import br.com.rsinet_appium_bdd.screens.HomeScreen;
 import br.com.rsinet_appium_bdd.screens.LoginScreen;
-import br.com.rsinet_appium_bdd.supports.DriverManager;
+import br.com.rsinet_appium_bdd.supports.DriverFactory;
 import cucumber.api.DataTable;
 import cucumber.api.java.pt.Dado;
 import cucumber.api.java.pt.Então;
@@ -27,7 +27,7 @@ public class CadastraUsuarioStep {
 	
 	@Dado("^que o usuário esteja na pagina cadastro de usuário$")
 	public void que_o_usuário_esteja_na_pagina_cadastro_de_usuário() {
-		driver = DriverManager.getDriver();
+		driver = DriverFactory.getDriver();
 		homeScreen = new HomeScreen(driver);
 		formCadastroScreen = new FormCadastraoUsuarioScreen(driver);
 		loginScreen = new LoginScreen(driver);
@@ -57,8 +57,7 @@ public class CadastraUsuarioStep {
 
 	@Então("^o usuario deve ser notificado que o usuario esta logado$")
 	public void oUsuarioDeveSerNotificadoQueOUsuarioEstaLogado() throws Throwable {
-		String usuarioAtual = homeScreen.assertNovoUsuario();
-		assertNotEquals("LOGIN", usuarioAtual);
+		assertNotEquals("LOGIN", homeScreen.assertNovoUsuario());
 	}
 
 	@Quando("^realizar o cadastro sem preencher os campos obrigatorios$")

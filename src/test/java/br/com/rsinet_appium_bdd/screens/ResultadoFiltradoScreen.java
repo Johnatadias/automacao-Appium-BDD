@@ -9,8 +9,10 @@ public class ResultadoFiltradoScreen extends BaseScreen{
 		super(driver);
 	}
 
-	public void escolheProdudo(String produto) {
+	public DescricaoProdutoScreen escolheProdudo(String produto) {
 		driver.findElementByXPath("//android.widget.TextView[starts-with(@text, '"+produto+"')]").click();
+		
+		return new DescricaoProdutoScreen(driver);
 	}
 	
 	/////////////////////////////////////////////////////////

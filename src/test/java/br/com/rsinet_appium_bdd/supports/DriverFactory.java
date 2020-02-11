@@ -8,8 +8,9 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.android.AndroidDriver;
+import io.appium.java_client.remote.MobileCapabilityType;
 
-public class DriverManager {
+public class DriverFactory {
 
 	private static AndroidDriver<MobileElement> driver;
 	private static DesiredCapabilities desiredCapabilities;
@@ -20,14 +21,16 @@ public class DriverManager {
 		return driver;
 	}
 	
-	public static AndroidDriver<MobileElement> createDriver() {
+	public static void createDriver() {
 		desiredCapabilities = new DesiredCapabilities();
 
 		desiredCapabilities.setCapability("platformName", "Android");
 		desiredCapabilities.setCapability("deviceName", "89d6f0da");
-		desiredCapabilities.setCapability("udid", "10.0.0.101:5555");
+		desiredCapabilities.setCapability("udid", "89d6f0da");
 		//desiredCapabilities.setCapability("udid", "emulator-5554"); //Define qual dispositivo vai executar
 		// desiredCapabilities.setCapability(MobileCapabilityType.APP, C:\\temp\\Selenium_Automacao\\ProjectTreinamentoHub_Appium_BDD\\src\\test\\resources\\Advantage+demo+2_2.apk");
+		desiredCapabilities.setCapability("automationName", "uiautomator2");
+		desiredCapabilities.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT, "120");
 		desiredCapabilities.setCapability("appPackage", "com.Advantage.aShopping");
 		desiredCapabilities.setCapability("appActivity", "com.Advantage.aShopping.SplashActivity");
 		desiredCapabilities.setCapability("unicodeKeyboard", true);
@@ -39,8 +42,6 @@ public class DriverManager {
 			e.printStackTrace();
 		}
 		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
-
-		return driver;
 	}
 
 	public static AndroidDriver<MobileElement> quitChrome() {

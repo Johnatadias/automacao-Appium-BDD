@@ -6,7 +6,7 @@ import static org.junit.Assert.assertTrue;
 import br.com.rsinet_appium_bdd.screens.DescricaoProdutoScreen;
 import br.com.rsinet_appium_bdd.screens.HomeScreen;
 import br.com.rsinet_appium_bdd.screens.ResultadoFiltradoScreen;
-import br.com.rsinet_appium_bdd.supports.DriverManager;
+import br.com.rsinet_appium_bdd.supports.DriverFactory;
 import cucumber.api.java.pt.Dado;
 import cucumber.api.java.pt.Então;
 import cucumber.api.java.pt.Quando;
@@ -22,7 +22,7 @@ public class BuscaProdutoLupaStep {
 
 	@Dado("^que o usuario esteja na tela home do sistema$")
 	public void queOUsuarioEstejaNaTelaHomeDoSistema() {
-		driver = DriverManager.getDriver();
+		driver = DriverFactory.getDriver();
 		homeScreen = new HomeScreen(driver);
 		resultFiltradoScreen = new ResultadoFiltradoScreen(driver);
 		descProdutoScreen = new DescricaoProdutoScreen(driver);

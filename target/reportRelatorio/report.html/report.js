@@ -86,7 +86,7 @@ formatter.examples({
   "keyword": "Exemplos"
 });
 formatter.before({
-  "duration": 24341552900,
+  "duration": 23347817500,
   "status": "passed"
 });
 formatter.scenario({
@@ -149,7 +149,7 @@ formatter.match({
   "location": "AdicionaProdutoCarrinhoStep.queOUsuarioEstejaLogadoNaTelaPrincipal()"
 });
 formatter.result({
-  "duration": 7081418600,
+  "duration": 7621609800,
   "status": "passed"
 });
 formatter.match({
@@ -162,7 +162,7 @@ formatter.match({
   "location": "AdicionaProdutoCarrinhoStep.selecionaDeterminadaCategoria(String)"
 });
 formatter.result({
-  "duration": 3936283600,
+  "duration": 680685300,
   "status": "passed"
 });
 formatter.match({
@@ -175,7 +175,7 @@ formatter.match({
   "location": "AdicionaProdutoCarrinhoStep.selecionaOProduto(String)"
 });
 formatter.result({
-  "duration": 2751034700,
+  "duration": 3219841000,
   "status": "passed"
 });
 formatter.match({
@@ -188,14 +188,14 @@ formatter.match({
   "location": "AdicionaProdutoCarrinhoStep.adicionaAQuantidadesDeItemsPara(String)"
 });
 formatter.result({
-  "duration": 3015726700,
+  "duration": 2400586600,
   "status": "passed"
 });
 formatter.match({
   "location": "AdicionaProdutoCarrinhoStep.adicionoNoCarrinhoDeCompras()"
 });
 formatter.result({
-  "duration": 635298500,
+  "duration": 683557800,
   "status": "passed"
 });
 formatter.match({
@@ -208,15 +208,15 @@ formatter.match({
   "location": "AdicionaProdutoCarrinhoStep.deveExistirItensNoCarrinho(String)"
 });
 formatter.result({
-  "duration": 1290555100,
+  "duration": 1316288100,
   "status": "passed"
 });
 formatter.after({
-  "duration": 958230800,
+  "duration": 730498800,
   "status": "passed"
 });
 formatter.after({
-  "duration": 1273639800,
+  "duration": 651732800,
   "status": "passed"
 });
 formatter.uri("buscaProdutoHome.feature");
@@ -240,7 +240,7 @@ formatter.feature({
   ]
 });
 formatter.before({
-  "duration": 19697282300,
+  "duration": 17346009300,
   "status": "passed"
 });
 formatter.scenario({
@@ -275,7 +275,7 @@ formatter.match({
   "location": "BuscaProdutoHomeStep.queOUsuarioEstejaNaPaginaHome()"
 });
 formatter.result({
-  "duration": 104700,
+  "duration": 45800,
   "status": "passed"
 });
 formatter.match({
@@ -288,7 +288,7 @@ formatter.match({
   "location": "BuscaProdutoHomeStep.selecionaACategoria(String)"
 });
 formatter.result({
-  "duration": 1135589600,
+  "duration": 2042385400,
   "status": "passed"
 });
 formatter.match({
@@ -301,7 +301,7 @@ formatter.match({
   "location": "BuscaProdutoHomeStep.selecionaOProdutoDesejado(String)"
 });
 formatter.result({
-  "duration": 3421177400,
+  "duration": 3115509700,
   "status": "passed"
 });
 formatter.match({
@@ -314,15 +314,15 @@ formatter.match({
   "location": "BuscaProdutoHomeStep.oUsuarioDeveVisualizarAsInformaçõesDoProduto(String)"
 });
 formatter.result({
-  "duration": 731046500,
+  "duration": 221487800,
   "status": "passed"
 });
 formatter.after({
-  "duration": 1152511200,
+  "duration": 883054300,
   "status": "passed"
 });
 formatter.after({
-  "duration": 866252900,
+  "duration": 639299500,
   "status": "passed"
 });
 formatter.uri("buscaProdutoLupa.feature");
@@ -346,7 +346,7 @@ formatter.feature({
   ]
 });
 formatter.before({
-  "duration": 19699904300,
+  "duration": 19105164900,
   "status": "passed"
 });
 formatter.background({
@@ -365,7 +365,7 @@ formatter.match({
   "location": "BuscaProdutoLupaStep.queOUsuarioEstejaNaTelaHomeDoSistema()"
 });
 formatter.result({
-  "duration": 92100,
+  "duration": 59400,
   "status": "passed"
 });
 formatter.scenario({
@@ -407,7 +407,7 @@ formatter.match({
   "location": "BuscaProdutoLupaStep.inserirACategoriaNaLupaDePesquisa(String)"
 });
 formatter.result({
-  "duration": 2349986000,
+  "duration": 2547226000,
   "status": "passed"
 });
 formatter.match({
@@ -420,7 +420,7 @@ formatter.match({
   "location": "BuscaProdutoLupaStep.selecionarOProdutoDesejado(String)"
 });
 formatter.result({
-  "duration": 2870577600,
+  "duration": 2197998000,
   "status": "passed"
 });
 formatter.match({
@@ -433,19 +433,19 @@ formatter.match({
   "location": "BuscaProdutoLupaStep.oUsuarioDeveVisualizarAsInformaçõesSobreOProduto(String)"
 });
 formatter.result({
-  "duration": 207657400,
+  "duration": 868574700,
   "status": "passed"
 });
 formatter.after({
-  "duration": 867322200,
+  "duration": 784865700,
   "status": "passed"
 });
 formatter.after({
-  "duration": 1134530500,
+  "duration": 633785700,
   "status": "passed"
 });
 formatter.before({
-  "duration": 19811108200,
+  "duration": 25857199200,
   "status": "passed"
 });
 formatter.background({
@@ -464,7 +464,7 @@ formatter.match({
   "location": "BuscaProdutoLupaStep.queOUsuarioEstejaNaTelaHomeDoSistema()"
 });
 formatter.result({
-  "duration": 34100,
+  "duration": 20100,
   "status": "passed"
 });
 formatter.scenario({
@@ -501,7 +501,7 @@ formatter.match({
   "location": "BuscaProdutoLupaStep.inserirACategoriaNaLupaDePesquisa(String)"
 });
 formatter.result({
-  "duration": 2577647300,
+  "duration": 2310314800,
   "status": "passed"
 });
 formatter.match({
@@ -514,15 +514,15 @@ formatter.match({
   "location": "BuscaProdutoLupaStep.oUsuarioDeveSerNotificadoQueOProdutoNãoExiste(String)"
 });
 formatter.result({
-  "duration": 1131277200,
+  "duration": 1112521900,
   "status": "passed"
 });
 formatter.after({
-  "duration": 599605300,
+  "duration": 549955700,
   "status": "passed"
 });
 formatter.after({
-  "duration": 953604900,
+  "duration": 579450300,
   "status": "passed"
 });
 formatter.uri("cadastraUsuario.feature");
@@ -546,7 +546,7 @@ formatter.feature({
   ]
 });
 formatter.before({
-  "duration": 21109972800,
+  "duration": 18135857900,
   "status": "passed"
 });
 formatter.background({
@@ -565,7 +565,7 @@ formatter.match({
   "location": "CadastraUsuarioStep.que_o_usuário_esteja_na_pagina_cadastro_de_usuário()"
 });
 formatter.result({
-  "duration": 3152567500,
+  "duration": 3171942400,
   "status": "passed"
 });
 formatter.scenario({
@@ -596,27 +596,26 @@ formatter.match({
   "location": "CadastraUsuarioStep.realizarUmCadastroVálido()"
 });
 formatter.result({
-  "duration": 29617873500,
+  "duration": 29828085400,
   "status": "passed"
 });
 formatter.match({
   "location": "CadastraUsuarioStep.oUsuarioDeveSerNotificadoQueOUsuarioEstaLogado()"
 });
 formatter.result({
-  "duration": 822918900,
-  "error_message": "org.openqa.selenium.StaleElementReferenceException: androidx.test.uiautomator.StaleObjectException\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027DESKTOP-U784KFP\u0027, ip: \u002710.0.0.104\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002711.0.1\u0027\nDriver info: io.appium.java_client.android.AndroidDriver\nCapabilities {appActivity: com.Advantage.aShopping.Spl..., appPackage: com.Advantage.aShopping, databaseEnabled: false, desired: {appActivity: com.Advantage.aShopping.Spl..., appPackage: com.Advantage.aShopping, deviceName: 89d6f0da, platformName: android, resetKeyboard: true, udid: 10.0.0.101:5555, unicodeKeyboard: true}, deviceApiLevel: 28, deviceManufacturer: Xiaomi, deviceModel: Mi 9 SE, deviceName: 10.0.0.101:5555, deviceScreenDensity: 480, deviceScreenSize: 1080x2340, deviceUDID: 10.0.0.101:5555, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 3, platform: LINUX, platformName: Android, platformVersion: 9, resetKeyboard: true, statBarHeight: 81, takesScreenshot: true, udid: 10.0.0.101:5555, unicodeKeyboard: true, viewportRect: {height: 2048, left: 0, top: 81, width: 1080}, warnings: {}, webStorageEnabled: false}\nSession ID: b0d41462-b0c3-400f-b396-e91e18adaeab\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)\r\n\tat io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)\r\n\tat io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)\r\n\tat io.appium.java_client.DefaultGenericMobileElement.execute(DefaultGenericMobileElement.java:45)\r\n\tat io.appium.java_client.MobileElement.execute(MobileElement.java:1)\r\n\tat io.appium.java_client.android.AndroidElement.execute(AndroidElement.java:1)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.isDisplayed(RemoteWebElement.java:326)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)\r\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)\r\n\tat br.com.rsinet_appium_bdd.screens.HomeScreen.clicarMenuNaHomePage(HomeScreen.java:16)\r\n\tat br.com.rsinet_appium_bdd.screens.HomeScreen.assertNovoUsuario(HomeScreen.java:25)\r\n\tat br.com.rsinet_appium_bdd.steps.CadastraUsuarioStep.oUsuarioDeveSerNotificadoQueOUsuarioEstaLogado(CadastraUsuarioStep.java:60)\r\n\tat ✽.Então o usuario deve ser notificado que o usuario esta logado(cadastraUsuario.feature:16)\r\n",
-  "status": "failed"
-});
-formatter.after({
-  "duration": 680869700,
+  "duration": 3919583100,
   "status": "passed"
 });
 formatter.after({
-  "duration": 1067954000,
+  "duration": 802604800,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 631200000,
   "status": "passed"
 });
 formatter.before({
-  "duration": 22983033200,
+  "duration": 18806341700,
   "status": "passed"
 });
 formatter.background({
@@ -635,7 +634,7 @@ formatter.match({
   "location": "CadastraUsuarioStep.que_o_usuário_esteja_na_pagina_cadastro_de_usuário()"
 });
 formatter.result({
-  "duration": 3760597700,
+  "duration": 3181528700,
   "status": "passed"
 });
 formatter.scenario({
@@ -677,22 +676,22 @@ formatter.match({
   "location": "CadastraUsuarioStep.realizar_o_cadastro_sem_preencher_os_campos_obrigatorios()"
 });
 formatter.result({
-  "duration": 29876929800,
+  "duration": 29837641800,
   "status": "passed"
 });
 formatter.match({
   "location": "CadastraUsuarioStep.usuario_é_notificado_com_a_mensagem(DataTable)"
 });
 formatter.result({
-  "duration": 2963365200,
+  "duration": 3089149800,
   "status": "passed"
 });
 formatter.after({
-  "duration": 709638900,
+  "duration": 592147900,
   "status": "passed"
 });
 formatter.after({
-  "duration": 1215968600,
+  "duration": 650445300,
   "status": "passed"
 });
 });
