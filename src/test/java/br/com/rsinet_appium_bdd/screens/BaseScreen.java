@@ -1,5 +1,7 @@
 package br.com.rsinet_appium_bdd.screens;
 
+import org.openqa.selenium.Dimension;
+
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.TouchAction;
 import io.appium.java_client.android.AndroidDriver;
@@ -47,4 +49,19 @@ public class BaseScreen {
 		touchAction.tap(PointOption.point(992, 2099)).perform();
 	}
 	
+	public void scrollByDimension(double inicio, double fim) {
+	       
+        Dimension size = driver.manage().window().getSize();
+       
+        int x = size.width / 2;
+       
+        int yInicial = (int) (size.height * inicio);
+        int yFinal = (int) (size.height * fim);
+       
+        new TouchAction(driver)
+        .press(PointOption.point(x, yInicial))
+        .waitAction()
+        .moveTo(PointOption.point(x, yFinal))
+        .release().perform();
+    }
 }

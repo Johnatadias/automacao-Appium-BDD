@@ -86,7 +86,7 @@ formatter.examples({
   "keyword": "Exemplos"
 });
 formatter.before({
-  "duration": 23347817500,
+  "duration": 15242549701,
   "status": "passed"
 });
 formatter.scenario({
@@ -149,7 +149,7 @@ formatter.match({
   "location": "AdicionaProdutoCarrinhoStep.queOUsuarioEstejaLogadoNaTelaPrincipal()"
 });
 formatter.result({
-  "duration": 7621609800,
+  "duration": 5583560099,
   "status": "passed"
 });
 formatter.match({
@@ -162,7 +162,7 @@ formatter.match({
   "location": "AdicionaProdutoCarrinhoStep.selecionaDeterminadaCategoria(String)"
 });
 formatter.result({
-  "duration": 680685300,
+  "duration": 1947044800,
   "status": "passed"
 });
 formatter.match({
@@ -175,7 +175,7 @@ formatter.match({
   "location": "AdicionaProdutoCarrinhoStep.selecionaOProduto(String)"
 });
 formatter.result({
-  "duration": 3219841000,
+  "duration": 4206627600,
   "status": "passed"
 });
 formatter.match({
@@ -188,14 +188,14 @@ formatter.match({
   "location": "AdicionaProdutoCarrinhoStep.adicionaAQuantidadesDeItemsPara(String)"
 });
 formatter.result({
-  "duration": 2400586600,
+  "duration": 2203221701,
   "status": "passed"
 });
 formatter.match({
   "location": "AdicionaProdutoCarrinhoStep.adicionoNoCarrinhoDeCompras()"
 });
 formatter.result({
-  "duration": 683557800,
+  "duration": 584027400,
   "status": "passed"
 });
 formatter.match({
@@ -208,15 +208,15 @@ formatter.match({
   "location": "AdicionaProdutoCarrinhoStep.deveExistirItensNoCarrinho(String)"
 });
 formatter.result({
-  "duration": 1316288100,
+  "duration": 1233227900,
   "status": "passed"
 });
 formatter.after({
-  "duration": 730498800,
+  "duration": 350344199,
   "status": "passed"
 });
 formatter.after({
-  "duration": 651732800,
+  "duration": 709246000,
   "status": "passed"
 });
 formatter.uri("buscaProdutoHome.feature");
@@ -240,7 +240,7 @@ formatter.feature({
   ]
 });
 formatter.before({
-  "duration": 17346009300,
+  "duration": 15066797800,
   "status": "passed"
 });
 formatter.scenario({
@@ -263,19 +263,19 @@ formatter.step({
 });
 formatter.step({
   "line": 13,
-  "name": "seleciona o produto desejado \"HP ELITEPAD 1000 G2 TABLET\"",
+  "name": "seleciona o produto desejado \"HP PRO TABLET 608 G1\"",
   "keyword": "E "
 });
 formatter.step({
   "line": 14,
-  "name": "o usuario deve visualizar as informações do produto \"HP ELITEPAD 1000 G2 TABLET\"",
+  "name": "o usuario deve visualizar as informações do produto \"HP PRO TABLET 608 G1\"",
   "keyword": "Então "
 });
 formatter.match({
   "location": "BuscaProdutoHomeStep.queOUsuarioEstejaNaPaginaHome()"
 });
 formatter.result({
-  "duration": 45800,
+  "duration": 85799,
   "status": "passed"
 });
 formatter.match({
@@ -288,41 +288,42 @@ formatter.match({
   "location": "BuscaProdutoHomeStep.selecionaACategoria(String)"
 });
 formatter.result({
-  "duration": 2042385400,
+  "duration": 2056459601,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "HP ELITEPAD 1000 G2 TABLET",
+      "val": "HP PRO TABLET 608 G1",
       "offset": 30
     }
   ],
   "location": "BuscaProdutoHomeStep.selecionaOProdutoDesejado(String)"
 });
 formatter.result({
-  "duration": 3115509700,
+  "duration": 2864847200,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "HP ELITEPAD 1000 G2 TABLET",
+      "val": "HP PRO TABLET 608 G1",
       "offset": 53
     }
   ],
   "location": "BuscaProdutoHomeStep.oUsuarioDeveVisualizarAsInformaçõesDoProduto(String)"
 });
 formatter.result({
-  "duration": 221487800,
+  "duration": 15167870100,
+  "error_message": "org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027RSI1594\u0027, ip: \u002710.0.75.1\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_231\u0027\nDriver info: io.appium.java_client.android.AndroidDriver\nCapabilities {appActivity: com.Advantage.aShopping.Spl..., appPackage: com.Advantage.aShopping, automationName: uiautomator2, databaseEnabled: false, desired: {appActivity: com.Advantage.aShopping.Spl..., appPackage: com.Advantage.aShopping, automationName: uiautomator2, deviceName: 89d6f0da, newCommandTimeout: 120, platformName: android, resetKeyboard: true, udid: emulator-5554, unicodeKeyboard: true}, deviceApiLevel: 24, deviceManufacturer: Google, deviceModel: Android SDK built for x86, deviceName: emulator-5554, deviceScreenDensity: 420, deviceScreenSize: 1080x1920, deviceUDID: emulator-5554, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 120, pixelRatio: 2.625, platform: LINUX, platformName: Android, platformVersion: 7.0, resetKeyboard: true, statBarHeight: 63, takesScreenshot: true, udid: emulator-5554, unicodeKeyboard: true, viewportRect: {height: 1731, left: 0, top: 63, width: 1080}, warnings: {}, webStorageEnabled: false}\nSession ID: b112d15b-1e32-49e7-9f56-a62590889d35\n*** Element info: {Using\u003did, value\u003dcom.Advantage.aShopping:id/textViewProductName}\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)\r\n\tat java.lang.reflect.Constructor.newInstance(Unknown Source)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)\r\n\tat io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)\r\n\tat io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:62)\r\n\tat io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)\r\n\tat io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)\r\n\tat io.appium.java_client.DefaultGenericMobileDriver.findElementById(DefaultGenericMobileDriver.java:70)\r\n\tat io.appium.java_client.AppiumDriver.findElementById(AppiumDriver.java:1)\r\n\tat io.appium.java_client.android.AndroidDriver.findElementById(AndroidDriver.java:1)\r\n\tat br.com.rsinet_appium_bdd.screens.DescricaoProdutoScreen.validandoProdutoEscolhido(DescricaoProdutoScreen.java:16)\r\n\tat br.com.rsinet_appium_bdd.steps.BuscaProdutoHomeStep.oUsuarioDeveVisualizarAsInformaçõesDoProduto(BuscaProdutoHomeStep.java:39)\r\n\tat ✽.Então o usuario deve visualizar as informações do produto \"HP PRO TABLET 608 G1\"(buscaProdutoHome.feature:14)\r\n",
+  "status": "failed"
+});
+formatter.after({
+  "duration": 348935800,
   "status": "passed"
 });
 formatter.after({
-  "duration": 883054300,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 639299500,
+  "duration": 642467401,
   "status": "passed"
 });
 formatter.uri("buscaProdutoLupa.feature");
@@ -346,7 +347,7 @@ formatter.feature({
   ]
 });
 formatter.before({
-  "duration": 19105164900,
+  "duration": 19121504901,
   "status": "passed"
 });
 formatter.background({
@@ -365,7 +366,7 @@ formatter.match({
   "location": "BuscaProdutoLupaStep.queOUsuarioEstejaNaTelaHomeDoSistema()"
 });
 formatter.result({
-  "duration": 59400,
+  "duration": 95700,
   "status": "passed"
 });
 formatter.scenario({
@@ -407,7 +408,7 @@ formatter.match({
   "location": "BuscaProdutoLupaStep.inserirACategoriaNaLupaDePesquisa(String)"
 });
 formatter.result({
-  "duration": 2547226000,
+  "duration": 2609194301,
   "status": "passed"
 });
 formatter.match({
@@ -420,7 +421,7 @@ formatter.match({
   "location": "BuscaProdutoLupaStep.selecionarOProdutoDesejado(String)"
 });
 formatter.result({
-  "duration": 2197998000,
+  "duration": 2566211300,
   "status": "passed"
 });
 formatter.match({
@@ -433,19 +434,19 @@ formatter.match({
   "location": "BuscaProdutoLupaStep.oUsuarioDeveVisualizarAsInformaçõesSobreOProduto(String)"
 });
 formatter.result({
-  "duration": 868574700,
+  "duration": 43397401,
   "status": "passed"
 });
 formatter.after({
-  "duration": 784865700,
+  "duration": 324436199,
   "status": "passed"
 });
 formatter.after({
-  "duration": 633785700,
+  "duration": 939075400,
   "status": "passed"
 });
 formatter.before({
-  "duration": 25857199200,
+  "duration": 15229838000,
   "status": "passed"
 });
 formatter.background({
@@ -464,7 +465,7 @@ formatter.match({
   "location": "BuscaProdutoLupaStep.queOUsuarioEstejaNaTelaHomeDoSistema()"
 });
 formatter.result({
-  "duration": 20100,
+  "duration": 24599,
   "status": "passed"
 });
 formatter.scenario({
@@ -501,7 +502,7 @@ formatter.match({
   "location": "BuscaProdutoLupaStep.inserirACategoriaNaLupaDePesquisa(String)"
 });
 formatter.result({
-  "duration": 2310314800,
+  "duration": 2618704100,
   "status": "passed"
 });
 formatter.match({
@@ -514,15 +515,15 @@ formatter.match({
   "location": "BuscaProdutoLupaStep.oUsuarioDeveSerNotificadoQueOProdutoNãoExiste(String)"
 });
 formatter.result({
-  "duration": 1112521900,
+  "duration": 1039616800,
   "status": "passed"
 });
 formatter.after({
-  "duration": 549955700,
+  "duration": 232235700,
   "status": "passed"
 });
 formatter.after({
-  "duration": 579450300,
+  "duration": 746092800,
   "status": "passed"
 });
 formatter.uri("cadastraUsuario.feature");
@@ -546,7 +547,7 @@ formatter.feature({
   ]
 });
 formatter.before({
-  "duration": 18135857900,
+  "duration": 15499014600,
   "status": "passed"
 });
 formatter.background({
@@ -565,7 +566,7 @@ formatter.match({
   "location": "CadastraUsuarioStep.que_o_usuário_esteja_na_pagina_cadastro_de_usuário()"
 });
 formatter.result({
-  "duration": 3171942400,
+  "duration": 4412764901,
   "status": "passed"
 });
 formatter.scenario({
@@ -596,26 +597,26 @@ formatter.match({
   "location": "CadastraUsuarioStep.realizarUmCadastroVálido()"
 });
 formatter.result({
-  "duration": 29828085400,
+  "duration": 22276261100,
   "status": "passed"
 });
 formatter.match({
   "location": "CadastraUsuarioStep.oUsuarioDeveSerNotificadoQueOUsuarioEstaLogado()"
 });
 formatter.result({
-  "duration": 3919583100,
+  "duration": 3199810300,
   "status": "passed"
 });
 formatter.after({
-  "duration": 802604800,
+  "duration": 482868199,
   "status": "passed"
 });
 formatter.after({
-  "duration": 631200000,
+  "duration": 845954199,
   "status": "passed"
 });
 formatter.before({
-  "duration": 18806341700,
+  "duration": 15154317600,
   "status": "passed"
 });
 formatter.background({
@@ -634,7 +635,7 @@ formatter.match({
   "location": "CadastraUsuarioStep.que_o_usuário_esteja_na_pagina_cadastro_de_usuário()"
 });
 formatter.result({
-  "duration": 3181528700,
+  "duration": 3561620200,
   "status": "passed"
 });
 formatter.scenario({
@@ -676,22 +677,22 @@ formatter.match({
   "location": "CadastraUsuarioStep.realizar_o_cadastro_sem_preencher_os_campos_obrigatorios()"
 });
 formatter.result({
-  "duration": 29837641800,
+  "duration": 22392101401,
   "status": "passed"
 });
 formatter.match({
   "location": "CadastraUsuarioStep.usuario_é_notificado_com_a_mensagem(DataTable)"
 });
 formatter.result({
-  "duration": 3089149800,
+  "duration": 1562045501,
   "status": "passed"
 });
 formatter.after({
-  "duration": 592147900,
+  "duration": 257912800,
   "status": "passed"
 });
 formatter.after({
-  "duration": 650445300,
+  "duration": 724615300,
   "status": "passed"
 });
 });

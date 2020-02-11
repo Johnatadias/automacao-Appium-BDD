@@ -20,8 +20,8 @@ public class DescricaoProdutoScreen extends BaseScreen{
 	
 	public DescricaoProdutoScreen selecionarQtdDeProdutos(String qtd) throws InterruptedException {
 		new WebDriverWait(driver, 50).until(ExpectedConditions.visibilityOf(driver.findElementById("com.Advantage.aShopping:id/textViewProductQuantity"))).click();
-		driver.findElementById("com.Advantage.aShopping:id/textViewProductQuantity").clear();
-		driver.findElementById("com.Advantage.aShopping:id/textViewProductQuantity").sendKeys(qtd);
+		driver.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.LinearLayout[2]/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.EditText").clear();
+		driver.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.LinearLayout[2]/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.EditText").sendKeys(qtd);
 		driver.findElementById("com.Advantage.aShopping:id/textViewApply").click();
 		
 		return this;

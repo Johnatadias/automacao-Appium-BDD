@@ -11,6 +11,7 @@ public class LoginScreen extends BaseScreen{
 
 	public FormCadastraoUsuarioScreen clicarNovaConta() {
 		driver.findElementById("com.Advantage.aShopping:id/textViewDontHaveAnAccount").click();
+		
 		return new FormCadastraoUsuarioScreen(driver);
 	}
 	
@@ -20,8 +21,12 @@ public class LoginScreen extends BaseScreen{
 		pass.click();
 		pass.sendKeys("Oicara10");
 		driver.findElementById("com.Advantage.aShopping:id/buttonLogin").click();
-		Thread.sleep(2000);
-		driver.findElementById("android:id/button2").click();
+
+//		MobileElement popUp = driver.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.Button[1]");
+////		System.out.println(popUp.getText());
+////		if(popUp.getText().equals("NO")) 
+////			
+////			popUp.click();	
 		
 		return new HomeScreen(driver);
 	}

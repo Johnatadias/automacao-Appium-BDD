@@ -27,6 +27,7 @@ public class HomeScreen extends BaseScreen{
 	
 	public String assertNovoUsuario() {
 		clicarMenuNaHomePage();
+		
 		return driver.findElementByXPath("//android.support.v4.widget.DrawerLayout[@content-desc=\"Main Menu\"]/android.widget.FrameLayout/android.support.v7.widget.RecyclerView/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.LinearLayout[1]/android.widget.LinearLayout/android.widget.TextView[1]").getText();
 	}
 	

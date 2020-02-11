@@ -10,5 +10,5 @@ Funcionalidade: Escolher produto atraves da tela home
 Cenario: Devo escolher um produto pela tela home
 	Dado que o usuario esteja na pagina home 
 	Quando seleciona a categoria "TABLETS"
-	E seleciona o produto desejado "HP ELITEPAD 1000 G2 TABLET"
-	Então o usuario deve visualizar as informações do produto "HP ELITEPAD 1000 G2 TABLET"
+	E seleciona o produto desejado "HP PRO TABLET 608 G1"
+	Então o usuario deve visualizar as informações do produto "HP PRO TABLET 608 G1"

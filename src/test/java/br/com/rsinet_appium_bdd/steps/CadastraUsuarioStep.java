@@ -8,7 +8,6 @@ import java.util.List;
 import br.com.rsinet_appium_bdd.screens.BaseScreen;
 import br.com.rsinet_appium_bdd.screens.FormCadastraoUsuarioScreen;
 import br.com.rsinet_appium_bdd.screens.HomeScreen;
-import br.com.rsinet_appium_bdd.screens.LoginScreen;
 import br.com.rsinet_appium_bdd.supports.DriverFactory;
 import cucumber.api.DataTable;
 import cucumber.api.java.pt.Dado;
@@ -20,20 +19,13 @@ import io.appium.java_client.android.AndroidDriver;
 
 public class CadastraUsuarioStep {
 
-	private AndroidDriver<MobileElement> driver;
-	private HomeScreen homeScreen;
-	private FormCadastraoUsuarioScreen formCadastroScreen;
-	private LoginScreen loginScreen;
+	private AndroidDriver<MobileElement> driver = DriverFactory.getDriver();
+	private HomeScreen homeScreen = new HomeScreen(driver);
+	private FormCadastraoUsuarioScreen formCadastroScreen = new FormCadastraoUsuarioScreen(driver);
 	
 	@Dado("^que o usuário esteja na pagina cadastro de usuário$")
 	public void que_o_usuário_esteja_na_pagina_cadastro_de_usuário() {
-		driver = DriverFactory.getDriver();
-		homeScreen = new HomeScreen(driver);
-		formCadastroScreen = new FormCadastraoUsuarioScreen(driver);
-		loginScreen = new LoginScreen(driver);
-		homeScreen.clicarMenuNaHomePage();
-        homeScreen.clicarIconeLoginDoMenu();
-        loginScreen.clicarNovaConta();
+		homeScreen.clicarMenuNaHomePage().clicarIconeLoginDoMenu().clicarNovaConta();
 	}
 	
 	@Quando("^realizar um cadastro válido$")
@@ -83,7 +75,7 @@ public class CadastraUsuarioStep {
 	public void usuario_é_notificado_com_a_mensagem(DataTable mensagens) {
 		List<List<String>> date = mensagens.raw();
 		
-		new BaseScreen(driver, new TouchAction(driver)).scrollAndStop(date.get(0).get(0));
+		new BaseScreen(driver, new TouchAction(driver)).scrollByDimension(0.2, 0.8);
 		assertEquals(date.get(0).get(0), formCadastroScreen.campoUserNameRequired());
 		assertEquals(date.get(0).get(1), formCadastroScreen.campoEmailRequired());
 		assertEquals(date.get(0).get(2), formCadastroScreen.campoPasswordRequired());

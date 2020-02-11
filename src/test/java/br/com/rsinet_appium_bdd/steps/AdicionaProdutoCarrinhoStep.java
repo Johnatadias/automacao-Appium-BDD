@@ -4,7 +4,6 @@ import static org.junit.Assert.assertTrue;
 
 import br.com.rsinet_appium_bdd.screens.DescricaoProdutoScreen;
 import br.com.rsinet_appium_bdd.screens.HomeScreen;
-import br.com.rsinet_appium_bdd.screens.LoginScreen;
 import br.com.rsinet_appium_bdd.screens.ResultadoFiltradoScreen;
 import br.com.rsinet_appium_bdd.supports.DriverFactory;
 import cucumber.api.java.pt.Dado;
@@ -15,23 +14,14 @@ import io.appium.java_client.android.AndroidDriver;
 
 public class AdicionaProdutoCarrinhoStep {
 
-	private AndroidDriver<MobileElement> driver;
-	private HomeScreen homeScreen;
-	private LoginScreen loginScreen;
-	private ResultadoFiltradoScreen resultFiltradoScreen;
-	private DescricaoProdutoScreen descProdutoScreen;
+	private AndroidDriver<MobileElement> driver = DriverFactory.getDriver();
+	private HomeScreen homeScreen = new HomeScreen(driver);
+	private ResultadoFiltradoScreen resultFiltradoScreen = new ResultadoFiltradoScreen(driver);
+	private DescricaoProdutoScreen descProdutoScreen = new DescricaoProdutoScreen(driver);
 
 	@Dado("^que o usuario esteja logado na tela principal$")
 	public void queOUsuarioEstejaLogadoNaTelaPrincipal() throws InterruptedException {
-		driver = DriverFactory.getDriver();
-		homeScreen = new HomeScreen(driver);
-		loginScreen = new LoginScreen(driver);
-		resultFiltradoScreen = new ResultadoFiltradoScreen(driver);
-		descProdutoScreen = new DescricaoProdutoScreen(driver);
-
-		homeScreen.clicarMenuNaHomePage();
-		homeScreen.clicarIconeLoginDoMenu();
-		loginScreen.realizaLoginValido();
+		homeScreen.clicarMenuNaHomePage().clicarIconeLoginDoMenu().realizaLoginValido();
 	}
 
 	@Quando("^seleciona determinada categoria \"([^\"]*)\"$")

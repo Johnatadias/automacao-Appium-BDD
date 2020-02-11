@@ -50,7 +50,7 @@ public class FormCadastraoUsuarioScreen extends BaseScreen{
 		MobileElement campoPhoneNumber = driver.findElementByXPath(".//android.widget.LinearLayout/android.widget.ScrollView/android.widget.LinearLayout/android.widget.LinearLayout[2]/android.widget.LinearLayout/android.widget.RelativeLayout/android.widget.EditText");
 		campoPhoneNumber.click();
 		campoPhoneNumber.sendKeys(phoneNumber);
-		scrollAndStop("REGISTER");
+		scrollByDimension(0.9, 0.0);
 	}
 	
 	public void inseriCountry(String country) {

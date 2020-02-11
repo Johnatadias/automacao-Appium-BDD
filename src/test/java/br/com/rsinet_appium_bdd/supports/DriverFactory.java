@@ -26,9 +26,9 @@ public class DriverFactory {
 
 		desiredCapabilities.setCapability("platformName", "Android");
 		desiredCapabilities.setCapability("deviceName", "89d6f0da");
-		desiredCapabilities.setCapability("udid", "89d6f0da");
-		//desiredCapabilities.setCapability("udid", "emulator-5554"); //Define qual dispositivo vai executar
-		// desiredCapabilities.setCapability(MobileCapabilityType.APP, C:\\temp\\Selenium_Automacao\\ProjectTreinamentoHub_Appium_BDD\\src\\test\\resources\\Advantage+demo+2_2.apk");
+		//desiredCapabilities.setCapability("udid", "89d6f0da");
+		desiredCapabilities.setCapability("udid", "emulator-5554"); //Define qual dispositivo vai executar
+		//desiredCapabilities.setCapability(MobileCapabilityType.APP, "C:\\temp\\Selenium_Automacao\\ProjectTreinamentoHub_Appium_BDD\\src\\test\\resources\\Advantage+demo+2_2.apk");
 		desiredCapabilities.setCapability("automationName", "uiautomator2");
 		desiredCapabilities.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT, "120");
 		desiredCapabilities.setCapability("appPackage", "com.Advantage.aShopping");
@@ -44,9 +44,8 @@ public class DriverFactory {
 		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 	}
 
-	public static AndroidDriver<MobileElement> quitChrome() {
+	public static void quitChrome() {
 		if (driver != null)
 			driver.quit();
-		return driver;
 	}
 }

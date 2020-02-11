@@ -15,17 +15,14 @@ import io.appium.java_client.android.AndroidDriver;
 
 public class BuscaProdutoLupaStep {
 
-	private AndroidDriver<MobileElement> driver;
+	private AndroidDriver<MobileElement> driver = DriverFactory.getDriver();
+	private ResultadoFiltradoScreen resultFiltradoScreen = new ResultadoFiltradoScreen(driver);
+	private DescricaoProdutoScreen descProdutoScreen = new DescricaoProdutoScreen(driver);
 	private HomeScreen homeScreen;
-	private ResultadoFiltradoScreen resultFiltradoScreen;
-	private DescricaoProdutoScreen descProdutoScreen;
 
 	@Dado("^que o usuario esteja na tela home do sistema$")
 	public void queOUsuarioEstejaNaTelaHomeDoSistema() {
-		driver = DriverFactory.getDriver();
 		homeScreen = new HomeScreen(driver);
-		resultFiltradoScreen = new ResultadoFiltradoScreen(driver);
-		descProdutoScreen = new DescricaoProdutoScreen(driver);
 	}
 
 	@Quando("^inserir a categoria \"([^\"]*)\" na lupa de pesquisa$")
