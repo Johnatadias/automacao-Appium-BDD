@@ -10,84 +10,112 @@ public class FormCadastraoUsuarioScreen extends BaseScreen{
 		super(driver);
 	}
 
-	public void inseriUserName(String userName) {
+	public FormCadastraoUsuarioScreen inseriUserName(String userName) {
 		MobileElement campoUserName = driver.findElementByXPath(".//android.widget.LinearLayout[1]/android.widget.RelativeLayout/android.widget.EditText");
 		campoUserName.click();
 		campoUserName.sendKeys(userName);
+		
+		return this;
 	}
 	
-	public void inseriEmail(String email) {
+	public FormCadastraoUsuarioScreen inseriEmail(String email) {
 		MobileElement campoEmail = driver.findElementByXPath("//android.view.ViewGroup[@content-desc=\"Home Page\"]/android.widget.LinearLayout[2]/android.widget.ScrollView/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.LinearLayout[2]/android.widget.RelativeLayout/android.widget.EditText");
 		campoEmail.click();
 		campoEmail.sendKeys(email);
+		
+		return this;
 	}
 	
-	public void inseriPassword(String password) {
+	public FormCadastraoUsuarioScreen inseriPassword(String password) {
 		MobileElement campoPassword = driver.findElementByXPath(".//android.widget.LinearLayout[3]/android.widget.RelativeLayout/android.widget.EditText");
 		campoPassword.click();
 		campoPassword.sendKeys(password);
+		
+		return this;
 	}
 	
-	public void inseriConfirPassword(String confirmPassword) {
+	public FormCadastraoUsuarioScreen inseriConfirPassword(String confirmPassword) {
 		MobileElement campoConfirmPassword = driver.findElementByXPath(".//android.widget.LinearLayout[4]/android.widget.RelativeLayout/android.widget.EditText");
 		campoConfirmPassword.click();
 		campoConfirmPassword.sendKeys(confirmPassword);
+		
+		return this;
 	}
 	
-	public void inseriLastName(String lastName) {
+	public FormCadastraoUsuarioScreen inseriLastName(String lastName) {
 		MobileElement campoLastName = driver.findElementByXPath(".//android.widget.LinearLayout[2]/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.RelativeLayout[2]/android.widget.EditText");
 		campoLastName.click();
 		campoLastName.sendKeys(lastName);
+		
+		return this;
 	}
 	
-	public void inseriFirstName(String firstName) {
+	public FormCadastraoUsuarioScreen inseriFirstName(String firstName) {
 		MobileElement campoFirstName = driver.findElementByXPath(".//android.widget.LinearLayout[2]/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.RelativeLayout[1]/android.widget.EditText");
 		campoFirstName.click();
 		campoFirstName.sendKeys(firstName);
+		
+		return this;
 	}
 	
-	public void inseriPhoneNumber(String phoneNumber) {
+	public FormCadastraoUsuarioScreen inseriPhoneNumber(String phoneNumber) {
 		MobileElement campoPhoneNumber = driver.findElementByXPath(".//android.widget.LinearLayout/android.widget.ScrollView/android.widget.LinearLayout/android.widget.LinearLayout[2]/android.widget.LinearLayout/android.widget.RelativeLayout/android.widget.EditText");
 		campoPhoneNumber.click();
 		campoPhoneNumber.sendKeys(phoneNumber);
 		scrollByDimension(0.9, 0.0);
+		
+		return this;
 	}
 	
-	public void inseriCountry(String country) {
+	public FormCadastraoUsuarioScreen inseriCountry(String country) {
 		driver.findElementById("com.Advantage.aShopping:id/textViewCountries").click();
 		scrollClick(country);
+		
+		return this;
 	}
 	
-	public void inseriStates(String states) {
+	public FormCadastraoUsuarioScreen inseriStates(String states) {
 		MobileElement campoStates = driver.findElementByXPath(".//android.widget.LinearLayout[2]/android.widget.ScrollView/android.widget.LinearLayout/android.widget.LinearLayout[2]/android.widget.LinearLayout/android.widget.LinearLayout[1]/android.widget.LinearLayout[2]/android.widget.RelativeLayout/android.widget.EditText");
 		campoStates.click();
 		campoStates.sendKeys(states);
+		
+		return this;
 	}
 	
-	public void inseriAddress(String address) {
+	public FormCadastraoUsuarioScreen inseriAddress(String address) {
 		MobileElement campoAddress = driver.findElementByXPath(".//android.widget.LinearLayout[2]/android.widget.ScrollView/android.widget.LinearLayout/android.widget.LinearLayout[2]/android.widget.LinearLayout/android.widget.RelativeLayout/android.widget.EditText");
 		campoAddress.click();
 		campoAddress.sendKeys(address);
+		
+		return this;
 	}
 	
-	public void inseriCity(String city) {
+	public FormCadastraoUsuarioScreen inseriCity(String city) {
 		MobileElement campoCity = driver.findElementByXPath(".//android.widget.LinearLayout/android.widget.ScrollView/android.widget.LinearLayout/android.widget.LinearLayout[2]/android.widget.LinearLayout/android.widget.LinearLayout[2]/android.widget.RelativeLayout[1]/android.widget.EditText");
 		campoCity.click();
 		campoCity.sendKeys(city);
+		
+		return this;
 	}
 
-	public void inseriZipCode(String zipCode) {
+	public FormCadastraoUsuarioScreen inseriZipCode(String zipCode) {
 		MobileElement campoZip = driver.findElementByXPath(".//android.widget.LinearLayout/android.widget.ScrollView/android.widget.LinearLayout/android.widget.LinearLayout[2]/android.widget.LinearLayout/android.widget.LinearLayout[2]/android.widget.RelativeLayout[2]/android.widget.EditText");
 		campoZip.click();
 		campoZip.sendKeys(zipCode);
+		
+		return this;
 	}
 
-	public void checkBoxReceberPromocoes() {
+	public FormCadastraoUsuarioScreen checkBoxReceberPromocoes() {
 		driver.findElementById("com.Advantage.aShopping:id/checkBoxRecieveOffers").click();
+		
+		return this;
 	}
 
-	public void btnRegistrar() {
+	public HomeScreen btnRegistrar() {
 		driver.findElementById("com.Advantage.aShopping:id/buttonRegister").click();
+		
+		return new HomeScreen(driver);
 	}
 	
 	public HomeScreen cadastroDeUsuario(String userName, String email, String password, String confirmPassword, String firstName,

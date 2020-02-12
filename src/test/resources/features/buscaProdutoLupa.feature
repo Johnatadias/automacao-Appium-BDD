@@ -12,9 +12,9 @@ Contexto:
 	
 	@tipo1
 	Cenário: Deve pesquisar um produto existente
-	Quando inserir a categoria "laptops" na lupa de pesquisa
-	E selecionar o produto desejado "HP PAVILION 15Z LAPTOP"
-	Então o usuario deve visualizar as informações sobre o produto "HP PAVILION 15Z LAPTOP"
+	Quando inserir a categoria "TABLETS" na lupa de pesquisa
+	E selecionar o produto desejado "HP ELITEPAD 1000 G2 TABLET"
+	Então o usuario deve visualizar as informações sobre o produto "HP ELITEPAD 1000 G2 TABLET"
 	
 	@tipo2
 	Cenário: Não deve encontrar um produto inexistente

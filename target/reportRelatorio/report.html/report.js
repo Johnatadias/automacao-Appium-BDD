@@ -86,7 +86,7 @@ formatter.examples({
   "keyword": "Exemplos"
 });
 formatter.before({
-  "duration": 15242549701,
+  "duration": 17673205700,
   "status": "passed"
 });
 formatter.scenario({
@@ -149,7 +149,7 @@ formatter.match({
   "location": "AdicionaProdutoCarrinhoStep.queOUsuarioEstejaLogadoNaTelaPrincipal()"
 });
 formatter.result({
-  "duration": 5583560099,
+  "duration": 6250684200,
   "status": "passed"
 });
 formatter.match({
@@ -162,7 +162,7 @@ formatter.match({
   "location": "AdicionaProdutoCarrinhoStep.selecionaDeterminadaCategoria(String)"
 });
 formatter.result({
-  "duration": 1947044800,
+  "duration": 1928101200,
   "status": "passed"
 });
 formatter.match({
@@ -175,7 +175,7 @@ formatter.match({
   "location": "AdicionaProdutoCarrinhoStep.selecionaOProduto(String)"
 });
 formatter.result({
-  "duration": 4206627600,
+  "duration": 2803962100,
   "status": "passed"
 });
 formatter.match({
@@ -188,14 +188,14 @@ formatter.match({
   "location": "AdicionaProdutoCarrinhoStep.adicionaAQuantidadesDeItemsPara(String)"
 });
 formatter.result({
-  "duration": 2203221701,
+  "duration": 2119034500,
   "status": "passed"
 });
 formatter.match({
   "location": "AdicionaProdutoCarrinhoStep.adicionoNoCarrinhoDeCompras()"
 });
 formatter.result({
-  "duration": 584027400,
+  "duration": 593573200,
   "status": "passed"
 });
 formatter.match({
@@ -208,15 +208,15 @@ formatter.match({
   "location": "AdicionaProdutoCarrinhoStep.deveExistirItensNoCarrinho(String)"
 });
 formatter.result({
-  "duration": 1233227900,
+  "duration": 1104382300,
   "status": "passed"
 });
 formatter.after({
-  "duration": 350344199,
+  "duration": 394465200,
   "status": "passed"
 });
 formatter.after({
-  "duration": 709246000,
+  "duration": 766975300,
   "status": "passed"
 });
 formatter.uri("buscaProdutoHome.feature");
@@ -240,7 +240,7 @@ formatter.feature({
   ]
 });
 formatter.before({
-  "duration": 15066797800,
+  "duration": 15943453000,
   "status": "passed"
 });
 formatter.scenario({
@@ -258,72 +258,71 @@ formatter.step({
 });
 formatter.step({
   "line": 12,
-  "name": "seleciona a categoria \"TABLETS\"",
+  "name": "seleciona a categoria \"LAPTOPS\"",
   "keyword": "Quando "
 });
 formatter.step({
   "line": 13,
-  "name": "seleciona o produto desejado \"HP PRO TABLET 608 G1\"",
+  "name": "seleciona o produto desejado \"HP ENVY X360 - 15T LAPTOP\"",
   "keyword": "E "
 });
 formatter.step({
   "line": 14,
-  "name": "o usuario deve visualizar as informações do produto \"HP PRO TABLET 608 G1\"",
+  "name": "o usuario deve visualizar as informações do produto \"HP ENVY X360 - 15T LAPTOP\"",
   "keyword": "Então "
 });
 formatter.match({
   "location": "BuscaProdutoHomeStep.queOUsuarioEstejaNaPaginaHome()"
 });
 formatter.result({
-  "duration": 85799,
+  "duration": 132800,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "TABLETS",
+      "val": "LAPTOPS",
       "offset": 23
     }
   ],
   "location": "BuscaProdutoHomeStep.selecionaACategoria(String)"
 });
 formatter.result({
-  "duration": 2056459601,
+  "duration": 1739611500,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "HP PRO TABLET 608 G1",
+      "val": "HP ENVY X360 - 15T LAPTOP",
       "offset": 30
     }
   ],
   "location": "BuscaProdutoHomeStep.selecionaOProdutoDesejado(String)"
 });
 formatter.result({
-  "duration": 2864847200,
+  "duration": 4204103000,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "HP PRO TABLET 608 G1",
+      "val": "HP ENVY X360 - 15T LAPTOP",
       "offset": 53
     }
   ],
   "location": "BuscaProdutoHomeStep.oUsuarioDeveVisualizarAsInformaçõesDoProduto(String)"
 });
 formatter.result({
-  "duration": 15167870100,
-  "error_message": "org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027RSI1594\u0027, ip: \u002710.0.75.1\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_231\u0027\nDriver info: io.appium.java_client.android.AndroidDriver\nCapabilities {appActivity: com.Advantage.aShopping.Spl..., appPackage: com.Advantage.aShopping, automationName: uiautomator2, databaseEnabled: false, desired: {appActivity: com.Advantage.aShopping.Spl..., appPackage: com.Advantage.aShopping, automationName: uiautomator2, deviceName: 89d6f0da, newCommandTimeout: 120, platformName: android, resetKeyboard: true, udid: emulator-5554, unicodeKeyboard: true}, deviceApiLevel: 24, deviceManufacturer: Google, deviceModel: Android SDK built for x86, deviceName: emulator-5554, deviceScreenDensity: 420, deviceScreenSize: 1080x1920, deviceUDID: emulator-5554, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 120, pixelRatio: 2.625, platform: LINUX, platformName: Android, platformVersion: 7.0, resetKeyboard: true, statBarHeight: 63, takesScreenshot: true, udid: emulator-5554, unicodeKeyboard: true, viewportRect: {height: 1731, left: 0, top: 63, width: 1080}, warnings: {}, webStorageEnabled: false}\nSession ID: b112d15b-1e32-49e7-9f56-a62590889d35\n*** Element info: {Using\u003did, value\u003dcom.Advantage.aShopping:id/textViewProductName}\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)\r\n\tat java.lang.reflect.Constructor.newInstance(Unknown Source)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)\r\n\tat io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)\r\n\tat io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:62)\r\n\tat io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)\r\n\tat io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)\r\n\tat io.appium.java_client.DefaultGenericMobileDriver.findElementById(DefaultGenericMobileDriver.java:70)\r\n\tat io.appium.java_client.AppiumDriver.findElementById(AppiumDriver.java:1)\r\n\tat io.appium.java_client.android.AndroidDriver.findElementById(AndroidDriver.java:1)\r\n\tat br.com.rsinet_appium_bdd.screens.DescricaoProdutoScreen.validandoProdutoEscolhido(DescricaoProdutoScreen.java:16)\r\n\tat br.com.rsinet_appium_bdd.steps.BuscaProdutoHomeStep.oUsuarioDeveVisualizarAsInformaçõesDoProduto(BuscaProdutoHomeStep.java:39)\r\n\tat ✽.Então o usuario deve visualizar as informações do produto \"HP PRO TABLET 608 G1\"(buscaProdutoHome.feature:14)\r\n",
-  "status": "failed"
-});
-formatter.after({
-  "duration": 348935800,
+  "duration": 43068100,
   "status": "passed"
 });
 formatter.after({
-  "duration": 642467401,
+  "duration": 345348600,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 993271600,
   "status": "passed"
 });
 formatter.uri("buscaProdutoLupa.feature");
@@ -347,7 +346,7 @@ formatter.feature({
   ]
 });
 formatter.before({
-  "duration": 19121504901,
+  "duration": 15671515900,
   "status": "passed"
 });
 formatter.background({
@@ -366,7 +365,7 @@ formatter.match({
   "location": "BuscaProdutoLupaStep.queOUsuarioEstejaNaTelaHomeDoSistema()"
 });
 formatter.result({
-  "duration": 95700,
+  "duration": 64100,
   "status": "passed"
 });
 formatter.scenario({
@@ -385,68 +384,68 @@ formatter.scenario({
 });
 formatter.step({
   "line": 15,
-  "name": "inserir a categoria \"laptops\" na lupa de pesquisa",
+  "name": "inserir a categoria \"TABLETS\" na lupa de pesquisa",
   "keyword": "Quando "
 });
 formatter.step({
   "line": 16,
-  "name": "selecionar o produto desejado \"HP PAVILION 15Z LAPTOP\"",
+  "name": "selecionar o produto desejado \"HP ELITEPAD 1000 G2 TABLET\"",
   "keyword": "E "
 });
 formatter.step({
   "line": 17,
-  "name": "o usuario deve visualizar as informações sobre o produto \"HP PAVILION 15Z LAPTOP\"",
+  "name": "o usuario deve visualizar as informações sobre o produto \"HP ELITEPAD 1000 G2 TABLET\"",
   "keyword": "Então "
 });
 formatter.match({
   "arguments": [
     {
-      "val": "laptops",
+      "val": "TABLETS",
       "offset": 21
     }
   ],
   "location": "BuscaProdutoLupaStep.inserirACategoriaNaLupaDePesquisa(String)"
 });
 formatter.result({
-  "duration": 2609194301,
+  "duration": 2832827400,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "HP PAVILION 15Z LAPTOP",
+      "val": "HP ELITEPAD 1000 G2 TABLET",
       "offset": 31
     }
   ],
   "location": "BuscaProdutoLupaStep.selecionarOProdutoDesejado(String)"
 });
 formatter.result({
-  "duration": 2566211300,
+  "duration": 3387881700,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "HP PAVILION 15Z LAPTOP",
+      "val": "HP ELITEPAD 1000 G2 TABLET",
       "offset": 58
     }
   ],
   "location": "BuscaProdutoLupaStep.oUsuarioDeveVisualizarAsInformaçõesSobreOProduto(String)"
 });
 formatter.result({
-  "duration": 43397401,
+  "duration": 46585300,
   "status": "passed"
 });
 formatter.after({
-  "duration": 324436199,
+  "duration": 359568900,
   "status": "passed"
 });
 formatter.after({
-  "duration": 939075400,
+  "duration": 1017132500,
   "status": "passed"
 });
 formatter.before({
-  "duration": 15229838000,
+  "duration": 15735962700,
   "status": "passed"
 });
 formatter.background({
@@ -465,7 +464,7 @@ formatter.match({
   "location": "BuscaProdutoLupaStep.queOUsuarioEstejaNaTelaHomeDoSistema()"
 });
 formatter.result({
-  "duration": 24599,
+  "duration": 33900,
   "status": "passed"
 });
 formatter.scenario({
@@ -502,7 +501,7 @@ formatter.match({
   "location": "BuscaProdutoLupaStep.inserirACategoriaNaLupaDePesquisa(String)"
 });
 formatter.result({
-  "duration": 2618704100,
+  "duration": 2990065200,
   "status": "passed"
 });
 formatter.match({
@@ -515,15 +514,15 @@ formatter.match({
   "location": "BuscaProdutoLupaStep.oUsuarioDeveSerNotificadoQueOProdutoNãoExiste(String)"
 });
 formatter.result({
-  "duration": 1039616800,
+  "duration": 1010559900,
   "status": "passed"
 });
 formatter.after({
-  "duration": 232235700,
+  "duration": 250315500,
   "status": "passed"
 });
 formatter.after({
-  "duration": 746092800,
+  "duration": 767172100,
   "status": "passed"
 });
 formatter.uri("cadastraUsuario.feature");
@@ -547,7 +546,7 @@ formatter.feature({
   ]
 });
 formatter.before({
-  "duration": 15499014600,
+  "duration": 15728571000,
   "status": "passed"
 });
 formatter.background({
@@ -566,7 +565,7 @@ formatter.match({
   "location": "CadastraUsuarioStep.que_o_usuário_esteja_na_pagina_cadastro_de_usuário()"
 });
 formatter.result({
-  "duration": 4412764901,
+  "duration": 3554641700,
   "status": "passed"
 });
 formatter.scenario({
@@ -597,26 +596,26 @@ formatter.match({
   "location": "CadastraUsuarioStep.realizarUmCadastroVálido()"
 });
 formatter.result({
-  "duration": 22276261100,
+  "duration": 22268156000,
   "status": "passed"
 });
 formatter.match({
   "location": "CadastraUsuarioStep.oUsuarioDeveSerNotificadoQueOUsuarioEstaLogado()"
 });
 formatter.result({
-  "duration": 3199810300,
+  "duration": 3028556300,
   "status": "passed"
 });
 formatter.after({
-  "duration": 482868199,
+  "duration": 476627000,
   "status": "passed"
 });
 formatter.after({
-  "duration": 845954199,
+  "duration": 887636200,
   "status": "passed"
 });
 formatter.before({
-  "duration": 15154317600,
+  "duration": 16125163200,
   "status": "passed"
 });
 formatter.background({
@@ -635,7 +634,7 @@ formatter.match({
   "location": "CadastraUsuarioStep.que_o_usuário_esteja_na_pagina_cadastro_de_usuário()"
 });
 formatter.result({
-  "duration": 3561620200,
+  "duration": 3195551200,
   "status": "passed"
 });
 formatter.scenario({
@@ -677,22 +676,22 @@ formatter.match({
   "location": "CadastraUsuarioStep.realizar_o_cadastro_sem_preencher_os_campos_obrigatorios()"
 });
 formatter.result({
-  "duration": 22392101401,
+  "duration": 22061855800,
   "status": "passed"
 });
 formatter.match({
   "location": "CadastraUsuarioStep.usuario_é_notificado_com_a_mensagem(DataTable)"
 });
 formatter.result({
-  "duration": 1562045501,
+  "duration": 1508650700,
   "status": "passed"
 });
 formatter.after({
-  "duration": 257912800,
+  "duration": 279883000,
   "status": "passed"
 });
 formatter.after({
-  "duration": 724615300,
+  "duration": 779709500,
   "status": "passed"
 });
 });

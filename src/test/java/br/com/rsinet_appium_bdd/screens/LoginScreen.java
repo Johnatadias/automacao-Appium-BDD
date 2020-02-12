@@ -22,11 +22,7 @@ public class LoginScreen extends BaseScreen{
 		pass.sendKeys("Oicara10");
 		driver.findElementById("com.Advantage.aShopping:id/buttonLogin").click();
 
-//		MobileElement popUp = driver.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.Button[1]");
-////		System.out.println(popUp.getText());
-////		if(popUp.getText().equals("NO")) 
-////			
-////			popUp.click();	
+		//driver.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.Button[1]").click();
 		
 		return new HomeScreen(driver);
 	}

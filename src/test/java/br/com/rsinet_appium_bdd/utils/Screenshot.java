@@ -8,7 +8,6 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 
 import br.com.rsinet_appium_bdd.screens.BaseScreen;
-import gherkin.formatter.model.Scenario;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.android.AndroidDriver;
 

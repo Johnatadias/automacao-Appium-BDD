@@ -14,7 +14,6 @@ import cucumber.api.java.pt.Dado;
 import cucumber.api.java.pt.Então;
 import cucumber.api.java.pt.Quando;
 import io.appium.java_client.MobileElement;
-import io.appium.java_client.TouchAction;
 import io.appium.java_client.android.AndroidDriver;
 
 public class CadastraUsuarioStep {
@@ -30,19 +29,19 @@ public class CadastraUsuarioStep {
 	
 	@Quando("^realizar um cadastro válido$")
 	public void realizarUmCadastroVálido() {
-		formCadastroScreen.inseriUserName(formCadastroScreen.getNomeUsuarioRandom(6));
-		formCadastroScreen.inseriEmail("a@a.com");
-		formCadastroScreen.inseriPassword("John20");
-		formCadastroScreen.inseriConfirPassword("John20");
-		formCadastroScreen.inseriFirstName("Johnata");
-		formCadastroScreen.inseriLastName("Dias");
-		formCadastroScreen.inseriPhoneNumber("1234-1234");
-		formCadastroScreen.inseriCountry("Brazil");
-		formCadastroScreen.inseriStates("SP");
-		formCadastroScreen.inseriAddress("Rua xyz, 198");
-		formCadastroScreen.inseriCity("São Paulo");
-		formCadastroScreen.inseriZipCode("12345-123");
-		formCadastroScreen.checkBoxReceberPromocoes();
+		formCadastroScreen.inseriUserName(formCadastroScreen.getNomeUsuarioRandom(6))
+						  .inseriEmail("a@a.com")
+					      .inseriPassword("John20")
+						  .inseriConfirPassword("John20")
+					      .inseriFirstName("Johnata")
+						  .inseriLastName("Dias")
+						  .inseriPhoneNumber("1234-1234")
+						  .inseriCountry("Brazil")
+						  .inseriStates("SP")
+						  .inseriAddress("Rua xyz, 198")
+						  .inseriCity("São Paulo")
+						  .inseriZipCode("12345-123")
+						  .checkBoxReceberPromocoes();
 		
 		formCadastroScreen.btnRegistrar();
 	}
@@ -54,31 +53,31 @@ public class CadastraUsuarioStep {
 
 	@Quando("^realizar o cadastro sem preencher os campos obrigatorios$")
 	public void realizar_o_cadastro_sem_preencher_os_campos_obrigatorios() {
-		formCadastroScreen.inseriUserName("");
-		formCadastroScreen.inseriEmail("");
-		formCadastroScreen.inseriPassword("");
-		formCadastroScreen.inseriConfirPassword("");
-		formCadastroScreen.inseriFirstName("Johnata");
-		formCadastroScreen.inseriLastName("Dias");
-		formCadastroScreen.inseriPhoneNumber("1234-1234");
-		formCadastroScreen.inseriCountry("Brazil");
-		formCadastroScreen.inseriStates("SP");
-		formCadastroScreen.inseriAddress("Rua xyz, 198");
-		formCadastroScreen.inseriZipCode("12345-123");
-		formCadastroScreen.inseriCity("São Paulo");
-		formCadastroScreen.checkBoxReceberPromocoes();
+		formCadastroScreen.inseriUserName("")
+						  .inseriEmail("")
+						  .inseriPassword("")
+						  .inseriConfirPassword("")
+						  .inseriFirstName("Johnata")
+						  .inseriLastName("Dias")
+						  .inseriPhoneNumber("1234-1234")
+						  .inseriCountry("Brazil")
+						  .inseriStates("SP")
+						  .inseriAddress("Rua xyz, 198")
+						  .inseriZipCode("12345-123")
+						  .inseriCity("São Paulo")
+						  .checkBoxReceberPromocoes();
 		
 		formCadastroScreen.btnRegistrar();
 	}
 
 	@Então("^usuario é notificado com a mensagem$")
 	public void usuario_é_notificado_com_a_mensagem(DataTable mensagens) {
-		List<List<String>> date = mensagens.raw();
+		List<List<String>> data = mensagens.raw();
 		
-		new BaseScreen(driver, new TouchAction(driver)).scrollByDimension(0.2, 0.8);
-		assertEquals(date.get(0).get(0), formCadastroScreen.campoUserNameRequired());
-		assertEquals(date.get(0).get(1), formCadastroScreen.campoEmailRequired());
-		assertEquals(date.get(0).get(2), formCadastroScreen.campoPasswordRequired());
-		assertEquals(date.get(0).get(3), formCadastroScreen.campoConfirmPasswordRequired());
+		new BaseScreen(driver).scrollByDimension(0.2, 0.8);
+		assertEquals(data.get(0).get(0), formCadastroScreen.campoUserNameRequired());
+		assertEquals(data.get(0).get(1), formCadastroScreen.campoEmailRequired());
+		assertEquals(data.get(0).get(2), formCadastroScreen.campoPasswordRequired());
+		assertEquals(data.get(0).get(3), formCadastroScreen.campoConfirmPasswordRequired());
 	}
 }

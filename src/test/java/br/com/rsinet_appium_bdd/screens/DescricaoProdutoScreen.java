@@ -13,7 +13,7 @@ public class DescricaoProdutoScreen extends BaseScreen{
 	}
 
 	public String validandoProdutoEscolhido() {
-		return new WebDriverWait(driver, 50).until(ExpectedConditions.visibilityOf(driver.findElementById("com.Advantage.aShopping:id/textViewProductName"))).getText();
+		return new WebDriverWait(driver, 10).until(ExpectedConditions.visibilityOf(driver.findElementById("com.Advantage.aShopping:id/textViewProductName"))).getText();
 	}
 	
 	///////////////////////////////////////////////////////

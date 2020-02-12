@@ -2,7 +2,6 @@ package br.com.rsinet_appium_bdd.runner;
 
 import java.io.File;
 import java.io.IOException;
-
 import org.junit.AfterClass;
 import org.junit.runner.RunWith;
 
